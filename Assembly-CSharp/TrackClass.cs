@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using PathCreation;
 using PathCreation.Examples;
-using Unity.MLAgents;
 using UnityEngine;
 using UnityEngine.AI;
 

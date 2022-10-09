@@ -1,8 +1,6 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using Unity.MLAgents;
-using Unity.MLAgents.Actuators;
-using Unity.MLAgents.Sensors;
 using Unity.MLAgentsExamples;
 using UnityEngine;
 
@@ -86,31 +84,11 @@ public class TinyWalkerAgent : Agent
 		}
 	}
 
-	public override void Initialize()
-	{
-	}
-
-	public override void OnEpisodeBegin()
-	{
-	}
-
 	private void FixedUpdate()
 	{
 	}
 
-	public override void Heuristic([In] ActionBuffers actionBuffers)
-	{
-	}
-
-	public override void OnActionReceived(ActionBuffers actionBuffers)
-	{
-	}
-
 	public void CollectObservationBodyPart(BodyPart bp, VectorSensor sensor)
-	{
-	}
-
-	public override void CollectObservations(VectorSensor sensor)
 	{
 	}
 

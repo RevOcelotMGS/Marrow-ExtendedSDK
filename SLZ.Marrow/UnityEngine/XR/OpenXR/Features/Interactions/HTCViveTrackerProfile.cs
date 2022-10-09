@@ -1,10 +1,7 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System;
 using System.Runtime.CompilerServices;
-using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Controls;
-using UnityEngine.InputSystem.Layouts;
 using UnityEngine.Scripting;
-using UnityEngine.XR.OpenXR.Input;
 
 namespace UnityEngine.XR.OpenXR.Features.Interactions
 {
@@ -79,10 +76,6 @@ namespace UnityEngine.XR.OpenXR.Features.Interactions
 			[Preserve]
 			public new IntegerControl trackingState { get; private set; }
 
-			protected override void FinishSetup()
-			{
-			}
-
 			public XRViveTracker()
 				: base()
 			{
@@ -113,23 +106,6 @@ namespace UnityEngine.XR.OpenXR.Features.Interactions
 		public const string extensionName = "XR_HTCX_vive_tracker_interaction";
 
 		private const string kDeviceLocalizedName = "HTC Vive Tracker OpenXR";
-
-		protected override void RegisterDeviceLayout()
-		{
-		}
-
-		protected override void UnregisterDeviceLayout()
-		{
-		}
-
-		protected override void RegisterActionMapsWithRuntime()
-		{
-		}
-
-		protected override bool OnInstanceCreate(ulong xrInstance)
-		{
-			return default(bool);
-		}
 
 		public HTCViveTrackerProfile()
 			: base()

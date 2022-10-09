@@ -117,7 +117,7 @@ namespace TriangleNet
 
 		public IEnumerable<Edge> Edges
 		{
-			[IteratorStateMachine(typeof(_003Cget_Edges_003Ed__39))]
+			[IteratorStateMachine(typeof(Edge))]
 			get
 			{
 				return null;

@@ -79,6 +79,10 @@ namespace PathCreation.Examples
 		{
 		}
 
+		protected override void PathUpdated() {
+			throw new NotImplementedException();
+		}
+
 		public RoadMeshCreator_Custom()
 			: base()
 		{

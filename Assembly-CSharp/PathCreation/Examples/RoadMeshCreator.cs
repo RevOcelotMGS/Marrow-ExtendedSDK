@@ -42,6 +42,10 @@ namespace PathCreation.Examples
 		{
 		}
 
+		protected override void PathUpdated() {
+			throw new System.NotImplementedException();
+		}
+
 		public RoadMeshCreator()
 			: base()
 		{

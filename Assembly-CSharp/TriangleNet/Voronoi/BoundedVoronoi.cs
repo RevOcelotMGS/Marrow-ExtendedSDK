@@ -13,7 +13,6 @@ namespace TriangleNet.Voronoi
 		}
 
 		public BoundedVoronoi(Mesh mesh, IVoronoiFactory factory, IPredicates predicates)
-			: this(mesh)
 		{
 		}
 

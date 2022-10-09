@@ -1,8 +1,7 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System;
 using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Utilities;
 
 namespace SLZ.Marrow.Input
 {
@@ -30,23 +29,23 @@ namespace SLZ.Marrow.Input
 		{
 		}
 
-		void InputActions.IHMDActions.OnTrackingState(InputAction.CallbackContext context)
+		void InputActions.IHMDActions.OnTrackingState(CallbackContext context)
 		{
 		}
 
-		void InputActions.IHMDActions.OnPosition(InputAction.CallbackContext context)
+		void InputActions.IHMDActions.OnPosition(CallbackContext context)
 		{
 		}
 
-		void InputActions.IHMDActions.OnRotation(InputAction.CallbackContext context)
+		void InputActions.IHMDActions.OnRotation(CallbackContext context)
 		{
 		}
 
-		void InputActions.IHMDActions.OnVelocity(InputAction.CallbackContext context)
+		void InputActions.IHMDActions.OnVelocity(CallbackContext context)
 		{
 		}
 
-		void InputActions.IHMDActions.OnAngularVelocity(InputAction.CallbackContext context)
+		void InputActions.IHMDActions.OnAngularVelocity(CallbackContext context)
 		{
 		}
 

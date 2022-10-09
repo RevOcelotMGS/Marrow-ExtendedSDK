@@ -10,7 +10,6 @@ namespace TriangleNet.Voronoi
 		}
 
 		public StandardVoronoi(Mesh mesh, Rectangle box)
-			: this(mesh)
 		{
 		}
 

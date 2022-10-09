@@ -12,7 +12,11 @@ namespace TriangleNet.Voronoi
 
 		protected List<HalfEdge> rays;
 
-		protected VoronoiBase(Mesh mesh, IVoronoiFactory factory, IPredicates predicates, bool generate)
+        protected VoronoiBase()
+		{
+        }
+
+        protected VoronoiBase(Mesh mesh, IVoronoiFactory factory, IPredicates predicates, bool generate)
 			: base()
 		{
 		}

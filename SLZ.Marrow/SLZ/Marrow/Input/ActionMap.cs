@@ -1,5 +1,5 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System.Runtime.CompilerServices;
-using UnityEngine.InputSystem;
 
 namespace SLZ.Marrow.Input
 {

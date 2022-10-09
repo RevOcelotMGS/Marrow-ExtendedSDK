@@ -11,4 +11,12 @@ public class GripProxyMap : BoneProxyMap<GripProxy, Grip>
 		: base()
 	{
 	}
+
+	public override void MapMethods() {
+		throw new System.NotImplementedException();
+	}
+
+	protected override void MapProperties() {
+		throw new System.NotImplementedException();
+	}
 }

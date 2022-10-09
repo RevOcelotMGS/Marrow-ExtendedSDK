@@ -16,6 +16,14 @@ public class BarrelGripProxyMap : BoneProxyMap<BarrelGripProxy, BarrelGrip>
 		return default(UniTaskVoid);
 	}
 
+	protected override void MapProperties() {
+		throw new System.NotImplementedException();
+	}
+
+	public override void MapMethods() {
+		throw new System.NotImplementedException();
+	}
+
 	public BarrelGripProxyMap()
 		: base()
 	{

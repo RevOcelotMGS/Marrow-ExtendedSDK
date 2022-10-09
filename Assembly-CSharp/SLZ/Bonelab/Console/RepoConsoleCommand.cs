@@ -19,10 +19,6 @@ namespace SLZ.Bonelab.Console
 	[ConsoleCommand("repo", "add", "Add a mod repo")]
 	public class RepoConsoleCommand : BaseConsoleCommand
 	{
-		protected override ValueTuple<CommandStatus, string, object> ParseTokenAtIndex([TupleElementNames(new string[] { "token", "parsed" })] List<ValueTuple<string, object>> previousTokens, int index, string token)
-		{
-			return default(ValueTuple<CommandStatus, string, object>);
-		}
 
 		public override IUniTaskAsyncEnumerable<object> RunCommand(string command)
 		{

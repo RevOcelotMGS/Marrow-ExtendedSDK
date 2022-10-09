@@ -1,7 +1,7 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using SLZ.Interaction;
 using SLZ.Marrow.Data;
 using UnityEngine;
-using UnityEngine.Animations.Rigging;
 
 namespace SLZ.Data
 {

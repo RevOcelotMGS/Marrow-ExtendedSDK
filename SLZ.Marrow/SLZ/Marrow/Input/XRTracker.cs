@@ -1,4 +1,4 @@
-using UnityEngine.InputSystem;
+using Assets.Marrow_ExtendedSDK.StubClasses;
 
 namespace SLZ.Marrow.Input
 {
@@ -11,11 +11,11 @@ namespace SLZ.Marrow.Input
 		{
 		}
 
-		public void ReadPoseContext(InputAction.CallbackContext context)
+		public void ReadPoseContext(CallbackContext context)
 		{
 		}
 
-		public void ReadTrackingStateContext(InputAction.CallbackContext context)
+		public void ReadTrackingStateContext(CallbackContext context)
 		{
 		}
 	}

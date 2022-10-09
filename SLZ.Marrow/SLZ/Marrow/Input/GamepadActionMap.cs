@@ -1,6 +1,6 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.InputSystem;
 
 namespace SLZ.Marrow.Input
 {
@@ -124,75 +124,75 @@ namespace SLZ.Marrow.Input
 		{
 		}
 
-		public void OnLeftJoystick2DAxis(InputAction.CallbackContext context)
+		public void OnLeftJoystick2DAxis(CallbackContext context)
 		{
 		}
 
-		public void OnLeftTrigger1DAxis(InputAction.CallbackContext context)
+		public void OnLeftTrigger1DAxis(CallbackContext context)
 		{
 		}
 
-		public void OnLeftJoystickButton(InputAction.CallbackContext context)
+		public void OnLeftJoystickButton(CallbackContext context)
 		{
 		}
 
-		public void OnLeftShoulderButton(InputAction.CallbackContext context)
+		public void OnLeftShoulderButton(CallbackContext context)
 		{
 		}
 
-		public void OnLeftNorthButton(InputAction.CallbackContext context)
+		public void OnLeftNorthButton(CallbackContext context)
 		{
 		}
 
-		public void OnLeftEastButton(InputAction.CallbackContext context)
+		public void OnLeftEastButton(CallbackContext context)
 		{
 		}
 
-		public void OnLeftSouthButton(InputAction.CallbackContext context)
+		public void OnLeftSouthButton(CallbackContext context)
 		{
 		}
 
-		public void OnLeftWestButton(InputAction.CallbackContext context)
+		public void OnLeftWestButton(CallbackContext context)
 		{
 		}
 
-		public void OnSelectButton(InputAction.CallbackContext context)
+		public void OnSelectButton(CallbackContext context)
 		{
 		}
 
-		public void OnRightJoystick2DAxis(InputAction.CallbackContext context)
+		public void OnRightJoystick2DAxis(CallbackContext context)
 		{
 		}
 
-		public void OnRightTrigger1DAxis(InputAction.CallbackContext context)
+		public void OnRightTrigger1DAxis(CallbackContext context)
 		{
 		}
 
-		public void OnRightJoystickButton(InputAction.CallbackContext context)
+		public void OnRightJoystickButton(CallbackContext context)
 		{
 		}
 
-		public void OnRightShoulderButton(InputAction.CallbackContext context)
+		public void OnRightShoulderButton(CallbackContext context)
 		{
 		}
 
-		public void OnRightNorthButton(InputAction.CallbackContext context)
+		public void OnRightNorthButton(CallbackContext context)
 		{
 		}
 
-		public void OnRightEastButton(InputAction.CallbackContext context)
+		public void OnRightEastButton(CallbackContext context)
 		{
 		}
 
-		public void OnRightSouthButton(InputAction.CallbackContext context)
+		public void OnRightSouthButton(CallbackContext context)
 		{
 		}
 
-		public void OnRightWestButton(InputAction.CallbackContext context)
+		public void OnRightWestButton(CallbackContext context)
 		{
 		}
 
-		public void OnStartButton(InputAction.CallbackContext context)
+		public void OnStartButton(CallbackContext context)
 		{
 		}
 

@@ -2,23 +2,23 @@
 namespace Assets.Marrow_ExtendedSDK.StubClasses {
 	public abstract class Agent {
 
-		public void CollectObservations(VectorSensor sensor)
+        public virtual void CollectObservations(VectorSensor sensor)
 		{
 		}
 
-		public void Heuristic([In] ActionBuffers actionsOut)
+        public virtual void Heuristic([In] ActionBuffers actionsOut)
 		{
 		}
 
-		public void Initialize()
+        public virtual void Initialize()
 		{
 		}
 
-		public void OnActionReceived(ActionBuffers actionBuffers)
+        public virtual void OnActionReceived(ActionBuffers actionBuffers)
 		{
 		}
 
-        public void OnEpisodeBegin() {
+        public virtual void OnEpisodeBegin() {
         }
     }
 }

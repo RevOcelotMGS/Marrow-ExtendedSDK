@@ -21,6 +21,10 @@ namespace PathCreation.Examples
 		{
 		}
 
+		protected override void PathUpdated() {
+			throw new System.NotImplementedException();
+		}
+
 		public PathPlacer()
 			: base()
 		{

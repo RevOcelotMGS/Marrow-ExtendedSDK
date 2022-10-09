@@ -14,11 +14,6 @@ namespace SLZ.Bonelab.Console
 	[ConsoleCommand("level", "reload", "Reload Current Level")]
 	public class LevelReloadConsoleCommand : BaseConsoleCommand
 	{
-		protected override ValueTuple<CommandStatus, string, object> ParseTokenAtIndex([TupleElementNames(new string[] { "token", "parsed" })] List<ValueTuple<string, object>> previousTokens, int index, string token)
-		{
-			return default(ValueTuple<CommandStatus, string, object>);
-		}
-
 		public override IUniTaskAsyncEnumerable<object> RunCommand(string command)
 		{
 			return null;

@@ -1,7 +1,7 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using UnityEngine.XR.OpenXR.Features;
 
 namespace Steam.VR.Features
 {

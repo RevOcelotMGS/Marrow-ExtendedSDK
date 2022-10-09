@@ -13,10 +13,6 @@ namespace SLZ.Bonelab.Console
 {
 	public abstract class SimpleConsoleCommand : BaseConsoleCommand
 	{
-		protected override ValueTuple<CommandStatus, string, object> ParseTokenAtIndex([TupleElementNames(new string[] { "token", "parsed" })] List<ValueTuple<string, object>> previousTokens, int index, string token)
-		{
-			return default(ValueTuple<CommandStatus, string, object>);
-		}
 
 		public abstract UniTask RunSimpleCommand(IAsyncWriter<object> writer, string parameter);
 

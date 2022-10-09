@@ -1,5 +1,4 @@
 using System.Runtime.CompilerServices;
-using Unity.MLAgents.Sensors;
 using UnityEngine;
 
 public class SimpleBufferSensor : BaseInferenceSensor

@@ -1,7 +1,6 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-using Unity.MLAgents;
-using Unity.MLAgents.Sensors;
 using Unity.MLAgentsExamples;
 using UnityEngine;
 

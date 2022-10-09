@@ -1,3 +1,4 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using UnityEngine;
 
 namespace Unity.MLAgents

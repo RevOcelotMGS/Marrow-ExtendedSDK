@@ -1,5 +1,4 @@
 using Assets.Marrow_ExtendedSDK.StubClasses;
-using Unity.MLAgents.Sensors;
 using Unity.MLAgentsExamples;
 using UnityEngine;
 

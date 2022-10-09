@@ -1,9 +1,9 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
-using Unity.MLAgents.Sensors;
 using UnityEngine;
 
 public class RayInferenceSensor : BaseInferenceSensor
@@ -40,8 +40,6 @@ public class RayInferenceSensor : BaseInferenceSensor
 	public bool isActive;
 
 	private int outputCounter;
-
-	private RayPerceptionOutput eyes_output;
 
 	private int nbRays;
 

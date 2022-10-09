@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using AOT;
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using Steam.VR.Features;
 using UnityEngine;
-using UnityEngine.XR.OpenXR.Features;
 
 public class HandTrackingFeature : OpenXRFeature
 {

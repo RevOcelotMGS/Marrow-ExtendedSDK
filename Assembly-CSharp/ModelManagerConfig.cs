@@ -1,4 +1,4 @@
-using Unity.Barracuda;
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "BarracudaModelManagerConfig", menuName = "ModelManagerConfigs/BMMConfigs", order = 1)]

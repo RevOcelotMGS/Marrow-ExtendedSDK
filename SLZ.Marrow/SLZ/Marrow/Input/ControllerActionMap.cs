@@ -1,8 +1,7 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System;
 using System.Runtime.CompilerServices;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Utilities;
 
 namespace SLZ.Marrow.Input
 {
@@ -44,91 +43,91 @@ namespace SLZ.Marrow.Input
 		{
 		}
 
-		public void OnPosition(InputAction.CallbackContext context)
+		public void OnPosition(CallbackContext context)
 		{
 		}
 
-		public void OnRotation(InputAction.CallbackContext context)
+		public void OnRotation(CallbackContext context)
 		{
 		}
 
-		public void OnTrackingState(InputAction.CallbackContext context)
+		public void OnTrackingState(CallbackContext context)
 		{
 		}
 
-		public void OnVelocity(InputAction.CallbackContext context)
+		public void OnVelocity(CallbackContext context)
 		{
 		}
 
-		public void OnAngularVelocity(InputAction.CallbackContext context)
+		public void OnAngularVelocity(CallbackContext context)
 		{
 		}
 
-		public void OnPrimary2DAxis(InputAction.CallbackContext context)
+		public void OnPrimary2DAxis(CallbackContext context)
 		{
 		}
 
-		public void OnPrimary2DAxisClick(InputAction.CallbackContext context)
+		public void OnPrimary2DAxisClick(CallbackContext context)
 		{
 		}
 
-		public void OnPrimary2DAxisTouch(InputAction.CallbackContext context)
+		public void OnPrimary2DAxisTouch(CallbackContext context)
 		{
 		}
 
-		public void OnTouchpad(InputAction.CallbackContext context)
+		public void OnTouchpad(CallbackContext context)
 		{
 		}
 
-		public void OnTouchpadClick(InputAction.CallbackContext context)
+		public void OnTouchpadClick(CallbackContext context)
 		{
 		}
 
-		public void OnTouchpadTouch(InputAction.CallbackContext context)
+		public void OnTouchpadTouch(CallbackContext context)
 		{
 		}
 
-		public void OnTrigger(InputAction.CallbackContext context)
+		public void OnTrigger(CallbackContext context)
 		{
 		}
 
-		public void OnTriggerPress(InputAction.CallbackContext context)
+		public void OnTriggerPress(CallbackContext context)
 		{
 		}
 
-		public void OnTriggerTouch(InputAction.CallbackContext context)
+		public void OnTriggerTouch(CallbackContext context)
 		{
 		}
 
-		public void OnGrip(InputAction.CallbackContext context)
+		public void OnGrip(CallbackContext context)
 		{
 		}
 
-		public void OnGripPress(InputAction.CallbackContext context)
+		public void OnGripPress(CallbackContext context)
 		{
 		}
 
-		public void OnGripForce(InputAction.CallbackContext context)
+		public void OnGripForce(CallbackContext context)
 		{
 		}
 
-		public void OnPrimaryButton(InputAction.CallbackContext context)
+		public void OnPrimaryButton(CallbackContext context)
 		{
 		}
 
-		public void OnPrimaryTouch(InputAction.CallbackContext context)
+		public void OnPrimaryTouch(CallbackContext context)
 		{
 		}
 
-		public void OnSecondaryButton(InputAction.CallbackContext context)
+		public void OnSecondaryButton(CallbackContext context)
 		{
 		}
 
-		public void OnSecondaryTouch(InputAction.CallbackContext context)
+		public void OnSecondaryTouch(CallbackContext context)
 		{
 		}
 
-		public void OnMenuButton(InputAction.CallbackContext context)
+		public void OnMenuButton(CallbackContext context)
 		{
 		}
 

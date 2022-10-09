@@ -1,10 +1,9 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Utilities;
 
 namespace SLZ.Marrow.Input
 {
@@ -1972,436 +1971,436 @@ namespace SLZ.Marrow.Input
 
 		public interface IHMDActions
 		{
-			void OnTrackingState(InputAction.CallbackContext context);
+			void OnTrackingState(CallbackContext context);
 
-			void OnPosition(InputAction.CallbackContext context);
+			void OnPosition(CallbackContext context);
 
-			void OnRotation(InputAction.CallbackContext context);
+			void OnRotation(CallbackContext context);
 
-			void OnVelocity(InputAction.CallbackContext context);
+			void OnVelocity(CallbackContext context);
 
-			void OnAngularVelocity(InputAction.CallbackContext context);
+			void OnAngularVelocity(CallbackContext context);
 		}
 
 		public interface IControllerLActions
 		{
-			void OnTrackingState(InputAction.CallbackContext context);
+			void OnTrackingState(CallbackContext context);
 
-			void OnPosition(InputAction.CallbackContext context);
+			void OnPosition(CallbackContext context);
 
-			void OnRotation(InputAction.CallbackContext context);
+			void OnRotation(CallbackContext context);
 
-			void OnVelocity(InputAction.CallbackContext context);
+			void OnVelocity(CallbackContext context);
 
-			void OnAngularVelocity(InputAction.CallbackContext context);
+			void OnAngularVelocity(CallbackContext context);
 
-			void OnPrimary2DAxis(InputAction.CallbackContext context);
+			void OnPrimary2DAxis(CallbackContext context);
 
-			void OnPrimary2DAxisClick(InputAction.CallbackContext context);
+			void OnPrimary2DAxisClick(CallbackContext context);
 
-			void OnPrimary2DAxisTouch(InputAction.CallbackContext context);
+			void OnPrimary2DAxisTouch(CallbackContext context);
 
-			void OnTouchpad(InputAction.CallbackContext context);
+			void OnTouchpad(CallbackContext context);
 
-			void OnTouchpadClick(InputAction.CallbackContext context);
+			void OnTouchpadClick(CallbackContext context);
 
-			void OnTouchpadTouch(InputAction.CallbackContext context);
+			void OnTouchpadTouch(CallbackContext context);
 
-			void OnTrigger(InputAction.CallbackContext context);
+			void OnTrigger(CallbackContext context);
 
-			void OnTriggerPress(InputAction.CallbackContext context);
+			void OnTriggerPress(CallbackContext context);
 
-			void OnTriggerTouch(InputAction.CallbackContext context);
+			void OnTriggerTouch(CallbackContext context);
 
-			void OnGrip(InputAction.CallbackContext context);
+			void OnGrip(CallbackContext context);
 
-			void OnGripPress(InputAction.CallbackContext context);
+			void OnGripPress(CallbackContext context);
 
-			void OnGripForce(InputAction.CallbackContext context);
+			void OnGripForce(CallbackContext context);
 
-			void OnPrimaryButton(InputAction.CallbackContext context);
+			void OnPrimaryButton(CallbackContext context);
 
-			void OnPrimaryTouch(InputAction.CallbackContext context);
+			void OnPrimaryTouch(CallbackContext context);
 
-			void OnSecondaryButton(InputAction.CallbackContext context);
+			void OnSecondaryButton(CallbackContext context);
 
-			void OnSecondaryTouch(InputAction.CallbackContext context);
+			void OnSecondaryTouch(CallbackContext context);
 
-			void OnMenuButton(InputAction.CallbackContext context);
+			void OnMenuButton(CallbackContext context);
 		}
 
 		public interface IControllerRActions
 		{
-			void OnTrackingState(InputAction.CallbackContext context);
+			void OnTrackingState(CallbackContext context);
 
-			void OnPosition(InputAction.CallbackContext context);
+			void OnPosition(CallbackContext context);
 
-			void OnRotation(InputAction.CallbackContext context);
+			void OnRotation(CallbackContext context);
 
-			void OnVelocity(InputAction.CallbackContext context);
+			void OnVelocity(CallbackContext context);
 
-			void OnAngularVelocity(InputAction.CallbackContext context);
+			void OnAngularVelocity(CallbackContext context);
 
-			void OnPrimary2DAxis(InputAction.CallbackContext context);
+			void OnPrimary2DAxis(CallbackContext context);
 
-			void OnPrimary2DAxisClick(InputAction.CallbackContext context);
+			void OnPrimary2DAxisClick(CallbackContext context);
 
-			void OnPrimary2DAxisTouch(InputAction.CallbackContext context);
+			void OnPrimary2DAxisTouch(CallbackContext context);
 
-			void OnTouchpad(InputAction.CallbackContext context);
+			void OnTouchpad(CallbackContext context);
 
-			void OnTouchpadClick(InputAction.CallbackContext context);
+			void OnTouchpadClick(CallbackContext context);
 
-			void OnTouchpadTouch(InputAction.CallbackContext context);
+			void OnTouchpadTouch(CallbackContext context);
 
-			void OnTrigger(InputAction.CallbackContext context);
+			void OnTrigger(CallbackContext context);
 
-			void OnTriggerPress(InputAction.CallbackContext context);
+			void OnTriggerPress(CallbackContext context);
 
-			void OnTriggerTouch(InputAction.CallbackContext context);
+			void OnTriggerTouch(CallbackContext context);
 
-			void OnGrip(InputAction.CallbackContext context);
+			void OnGrip(CallbackContext context);
 
-			void OnGripPress(InputAction.CallbackContext context);
+			void OnGripPress(CallbackContext context);
 
-			void OnGripForce(InputAction.CallbackContext context);
+			void OnGripForce(CallbackContext context);
 
-			void OnPrimaryButton(InputAction.CallbackContext context);
+			void OnPrimaryButton(CallbackContext context);
 
-			void OnPrimaryTouch(InputAction.CallbackContext context);
+			void OnPrimaryTouch(CallbackContext context);
 
-			void OnSecondaryButton(InputAction.CallbackContext context);
+			void OnSecondaryButton(CallbackContext context);
 
-			void OnSecondaryTouch(InputAction.CallbackContext context);
+			void OnSecondaryTouch(CallbackContext context);
 		}
 
 		public interface IGamepadActions
 		{
-			void OnLeftJoystick2DAxis(InputAction.CallbackContext context);
+			void OnLeftJoystick2DAxis(CallbackContext context);
 
-			void OnLeftTrigger1DAxis(InputAction.CallbackContext context);
+			void OnLeftTrigger1DAxis(CallbackContext context);
 
-			void OnLeftJoystickButton(InputAction.CallbackContext context);
+			void OnLeftJoystickButton(CallbackContext context);
 
-			void OnLeftShoulderButton(InputAction.CallbackContext context);
+			void OnLeftShoulderButton(CallbackContext context);
 
-			void OnLeftNorthButton(InputAction.CallbackContext context);
+			void OnLeftNorthButton(CallbackContext context);
 
-			void OnLeftEastButton(InputAction.CallbackContext context);
+			void OnLeftEastButton(CallbackContext context);
 
-			void OnLeftSouthButton(InputAction.CallbackContext context);
+			void OnLeftSouthButton(CallbackContext context);
 
-			void OnLeftWestButton(InputAction.CallbackContext context);
+			void OnLeftWestButton(CallbackContext context);
 
-			void OnSelectButton(InputAction.CallbackContext context);
+			void OnSelectButton(CallbackContext context);
 
-			void OnRightJoystick2DAxis(InputAction.CallbackContext context);
+			void OnRightJoystick2DAxis(CallbackContext context);
 
-			void OnRightTrigger1DAxis(InputAction.CallbackContext context);
+			void OnRightTrigger1DAxis(CallbackContext context);
 
-			void OnRightJoystickButton(InputAction.CallbackContext context);
+			void OnRightJoystickButton(CallbackContext context);
 
-			void OnRightShoulderButton(InputAction.CallbackContext context);
+			void OnRightShoulderButton(CallbackContext context);
 
-			void OnRightNorthButton(InputAction.CallbackContext context);
+			void OnRightNorthButton(CallbackContext context);
 
-			void OnRightEastButton(InputAction.CallbackContext context);
+			void OnRightEastButton(CallbackContext context);
 
-			void OnRightSouthButton(InputAction.CallbackContext context);
+			void OnRightSouthButton(CallbackContext context);
 
-			void OnRightWestButton(InputAction.CallbackContext context);
+			void OnRightWestButton(CallbackContext context);
 
-			void OnStartButton(InputAction.CallbackContext context);
+			void OnStartButton(CallbackContext context);
 		}
 
 		public interface IMouseActions
 		{
-			void OnMouse_ForwardButton(InputAction.CallbackContext context);
+			void OnMouse_ForwardButton(CallbackContext context);
 
-			void OnMouse_BackButton(InputAction.CallbackContext context);
+			void OnMouse_BackButton(CallbackContext context);
 
-			void OnMouse_RButton(InputAction.CallbackContext context);
+			void OnMouse_RButton(CallbackContext context);
 
-			void OnMouse_MButton(InputAction.CallbackContext context);
+			void OnMouse_MButton(CallbackContext context);
 
-			void OnMouse_LButton(InputAction.CallbackContext context);
+			void OnMouse_LButton(CallbackContext context);
 
-			void OnMouse_Delta(InputAction.CallbackContext context);
+			void OnMouse_Delta(CallbackContext context);
 
-			void OnMouse_Scroll(InputAction.CallbackContext context);
+			void OnMouse_Scroll(CallbackContext context);
 		}
 
 		public interface IPositionalKeyboardActions
 		{
-			void OnPositional_Escape(InputAction.CallbackContext context);
+			void OnPositional_Escape(CallbackContext context);
 
-			void OnPositional_Space(InputAction.CallbackContext context);
+			void OnPositional_Space(CallbackContext context);
 
-			void OnPositional_Enter(InputAction.CallbackContext context);
+			void OnPositional_Enter(CallbackContext context);
 
-			void OnPositional_Tab(InputAction.CallbackContext context);
+			void OnPositional_Tab(CallbackContext context);
 
-			void OnPositional_Backquote(InputAction.CallbackContext context);
+			void OnPositional_Backquote(CallbackContext context);
 
-			void OnPositional_Quote(InputAction.CallbackContext context);
+			void OnPositional_Quote(CallbackContext context);
 
-			void OnPositional_Semicolon(InputAction.CallbackContext context);
+			void OnPositional_Semicolon(CallbackContext context);
 
-			void OnPositional_Comma(InputAction.CallbackContext context);
+			void OnPositional_Comma(CallbackContext context);
 
-			void OnPositional_Period(InputAction.CallbackContext context);
+			void OnPositional_Period(CallbackContext context);
 
-			void OnPositional_Slash(InputAction.CallbackContext context);
+			void OnPositional_Slash(CallbackContext context);
 
-			void OnPositional_Backslash(InputAction.CallbackContext context);
+			void OnPositional_Backslash(CallbackContext context);
 
-			void OnPositional_LeftBracket(InputAction.CallbackContext context);
+			void OnPositional_LeftBracket(CallbackContext context);
 
-			void OnPositional_RightBracket(InputAction.CallbackContext context);
+			void OnPositional_RightBracket(CallbackContext context);
 
-			void OnPositional_Minus(InputAction.CallbackContext context);
+			void OnPositional_Minus(CallbackContext context);
 
-			void OnPositional_Equals(InputAction.CallbackContext context);
+			void OnPositional_Equals(CallbackContext context);
 
-			void OnPositional_UpArrow(InputAction.CallbackContext context);
+			void OnPositional_UpArrow(CallbackContext context);
 
-			void OnPositional_DownArrow(InputAction.CallbackContext context);
+			void OnPositional_DownArrow(CallbackContext context);
 
-			void OnPositional_LeftArrow(InputAction.CallbackContext context);
+			void OnPositional_LeftArrow(CallbackContext context);
 
-			void OnPositional_RightArrow(InputAction.CallbackContext context);
+			void OnPositional_RightArrow(CallbackContext context);
 
-			void OnPositional_A(InputAction.CallbackContext context);
+			void OnPositional_A(CallbackContext context);
 
-			void OnPositional_B(InputAction.CallbackContext context);
+			void OnPositional_B(CallbackContext context);
 
-			void OnPositional_C(InputAction.CallbackContext context);
+			void OnPositional_C(CallbackContext context);
 
-			void OnPositional_D(InputAction.CallbackContext context);
+			void OnPositional_D(CallbackContext context);
 
-			void OnPositional_E(InputAction.CallbackContext context);
+			void OnPositional_E(CallbackContext context);
 
-			void OnPositional_F(InputAction.CallbackContext context);
+			void OnPositional_F(CallbackContext context);
 
-			void OnPositional_G(InputAction.CallbackContext context);
+			void OnPositional_G(CallbackContext context);
 
-			void OnPositional_H(InputAction.CallbackContext context);
+			void OnPositional_H(CallbackContext context);
 
-			void OnPositional_I(InputAction.CallbackContext context);
+			void OnPositional_I(CallbackContext context);
 
-			void OnPositional_J(InputAction.CallbackContext context);
+			void OnPositional_J(CallbackContext context);
 
-			void OnPositional_K(InputAction.CallbackContext context);
+			void OnPositional_K(CallbackContext context);
 
-			void OnPositional_L(InputAction.CallbackContext context);
+			void OnPositional_L(CallbackContext context);
 
-			void OnPositional_M(InputAction.CallbackContext context);
+			void OnPositional_M(CallbackContext context);
 
-			void OnPositional_N(InputAction.CallbackContext context);
+			void OnPositional_N(CallbackContext context);
 
-			void OnPositional_O(InputAction.CallbackContext context);
+			void OnPositional_O(CallbackContext context);
 
-			void OnPositional_P(InputAction.CallbackContext context);
+			void OnPositional_P(CallbackContext context);
 
-			void OnPositional_Q(InputAction.CallbackContext context);
+			void OnPositional_Q(CallbackContext context);
 
-			void OnPositional_R(InputAction.CallbackContext context);
+			void OnPositional_R(CallbackContext context);
 
-			void OnPositional_S(InputAction.CallbackContext context);
+			void OnPositional_S(CallbackContext context);
 
-			void OnPositional_T(InputAction.CallbackContext context);
+			void OnPositional_T(CallbackContext context);
 
-			void OnPositional_U(InputAction.CallbackContext context);
+			void OnPositional_U(CallbackContext context);
 
-			void OnPositional_V(InputAction.CallbackContext context);
+			void OnPositional_V(CallbackContext context);
 
-			void OnPositional_W(InputAction.CallbackContext context);
+			void OnPositional_W(CallbackContext context);
 
-			void OnPositional_X(InputAction.CallbackContext context);
+			void OnPositional_X(CallbackContext context);
 
-			void OnPositional_Y(InputAction.CallbackContext context);
+			void OnPositional_Y(CallbackContext context);
 
-			void OnPositional_Z(InputAction.CallbackContext context);
+			void OnPositional_Z(CallbackContext context);
 
-			void OnPositional_1(InputAction.CallbackContext context);
+			void OnPositional_1(CallbackContext context);
 
-			void OnPositional_2(InputAction.CallbackContext context);
+			void OnPositional_2(CallbackContext context);
 
-			void OnPositional_3(InputAction.CallbackContext context);
+			void OnPositional_3(CallbackContext context);
 
-			void OnPositional_4(InputAction.CallbackContext context);
+			void OnPositional_4(CallbackContext context);
 
-			void OnPositional_5(InputAction.CallbackContext context);
+			void OnPositional_5(CallbackContext context);
 
-			void OnPositional_6(InputAction.CallbackContext context);
+			void OnPositional_6(CallbackContext context);
 
-			void OnPositional_7(InputAction.CallbackContext context);
+			void OnPositional_7(CallbackContext context);
 
-			void OnPositional_8(InputAction.CallbackContext context);
+			void OnPositional_8(CallbackContext context);
 
-			void OnPositional_9(InputAction.CallbackContext context);
+			void OnPositional_9(CallbackContext context);
 
-			void OnPositional_0(InputAction.CallbackContext context);
+			void OnPositional_0(CallbackContext context);
 
-			void OnPositional_LeftShift(InputAction.CallbackContext context);
+			void OnPositional_LeftShift(CallbackContext context);
 
-			void OnPositional_RightShift(InputAction.CallbackContext context);
+			void OnPositional_RightShift(CallbackContext context);
 
-			void OnPositional_LeftAlt(InputAction.CallbackContext context);
+			void OnPositional_LeftAlt(CallbackContext context);
 
-			void OnPositional_RightAlt(InputAction.CallbackContext context);
+			void OnPositional_RightAlt(CallbackContext context);
 
-			void OnPositional_LeftCtrl(InputAction.CallbackContext context);
+			void OnPositional_LeftCtrl(CallbackContext context);
 
-			void OnPositional_RightCtrl(InputAction.CallbackContext context);
+			void OnPositional_RightCtrl(CallbackContext context);
 
-			void OnPositional_LeftMeta(InputAction.CallbackContext context);
+			void OnPositional_LeftMeta(CallbackContext context);
 
-			void OnPositional_RightMeta(InputAction.CallbackContext context);
+			void OnPositional_RightMeta(CallbackContext context);
 
-			void OnPositional_ContextMenu(InputAction.CallbackContext context);
+			void OnPositional_ContextMenu(CallbackContext context);
 
-			void OnPositional_Backspace(InputAction.CallbackContext context);
+			void OnPositional_Backspace(CallbackContext context);
 
-			void OnPositional_PageDown(InputAction.CallbackContext context);
+			void OnPositional_PageDown(CallbackContext context);
 
-			void OnPositional_PageUp(InputAction.CallbackContext context);
+			void OnPositional_PageUp(CallbackContext context);
 
-			void OnPositional_Home(InputAction.CallbackContext context);
+			void OnPositional_Home(CallbackContext context);
 
-			void OnPositional_End(InputAction.CallbackContext context);
+			void OnPositional_End(CallbackContext context);
 
-			void OnPositional_Insert(InputAction.CallbackContext context);
+			void OnPositional_Insert(CallbackContext context);
 
-			void OnPositional_Delete(InputAction.CallbackContext context);
+			void OnPositional_Delete(CallbackContext context);
 
-			void OnPositional_CapsLock(InputAction.CallbackContext context);
+			void OnPositional_CapsLock(CallbackContext context);
 
-			void OnPositional_NumLock(InputAction.CallbackContext context);
+			void OnPositional_NumLock(CallbackContext context);
 
-			void OnPositional_PrintScreen(InputAction.CallbackContext context);
+			void OnPositional_PrintScreen(CallbackContext context);
 
-			void OnPositional_ScrollLock(InputAction.CallbackContext context);
+			void OnPositional_ScrollLock(CallbackContext context);
 
-			void OnPositional_Pause(InputAction.CallbackContext context);
+			void OnPositional_Pause(CallbackContext context);
 
-			void OnPositional_NumpadEnter(InputAction.CallbackContext context);
+			void OnPositional_NumpadEnter(CallbackContext context);
 
-			void OnPositional_NumpadDivide(InputAction.CallbackContext context);
+			void OnPositional_NumpadDivide(CallbackContext context);
 
-			void OnPositional_NumpadMultiply(InputAction.CallbackContext context);
+			void OnPositional_NumpadMultiply(CallbackContext context);
 
-			void OnPositional_NumpadPlus(InputAction.CallbackContext context);
+			void OnPositional_NumpadPlus(CallbackContext context);
 
-			void OnPositional_NumpadMinus(InputAction.CallbackContext context);
+			void OnPositional_NumpadMinus(CallbackContext context);
 
-			void OnPositional_NumpadPeriod(InputAction.CallbackContext context);
+			void OnPositional_NumpadPeriod(CallbackContext context);
 
-			void OnPositional_NumpadEquals(InputAction.CallbackContext context);
+			void OnPositional_NumpadEquals(CallbackContext context);
 
-			void OnPositional_Numpad1(InputAction.CallbackContext context);
+			void OnPositional_Numpad1(CallbackContext context);
 
-			void OnPositional_Numpad2(InputAction.CallbackContext context);
+			void OnPositional_Numpad2(CallbackContext context);
 
-			void OnPositional_Numpad3(InputAction.CallbackContext context);
+			void OnPositional_Numpad3(CallbackContext context);
 
-			void OnPositional_Numpad4(InputAction.CallbackContext context);
+			void OnPositional_Numpad4(CallbackContext context);
 
-			void OnPositional_Numpad5(InputAction.CallbackContext context);
+			void OnPositional_Numpad5(CallbackContext context);
 
-			void OnPositional_Numpad6(InputAction.CallbackContext context);
+			void OnPositional_Numpad6(CallbackContext context);
 
-			void OnPositional_Numpad7(InputAction.CallbackContext context);
+			void OnPositional_Numpad7(CallbackContext context);
 
-			void OnPositional_Numpad8(InputAction.CallbackContext context);
+			void OnPositional_Numpad8(CallbackContext context);
 
-			void OnPositional_Numpad9(InputAction.CallbackContext context);
+			void OnPositional_Numpad9(CallbackContext context);
 
-			void OnPositional_Numpad0(InputAction.CallbackContext context);
+			void OnPositional_Numpad0(CallbackContext context);
 
-			void OnPositional_F1(InputAction.CallbackContext context);
+			void OnPositional_F1(CallbackContext context);
 
-			void OnPositional_F2(InputAction.CallbackContext context);
+			void OnPositional_F2(CallbackContext context);
 
-			void OnPositional_F3(InputAction.CallbackContext context);
+			void OnPositional_F3(CallbackContext context);
 
-			void OnPositional_F4(InputAction.CallbackContext context);
+			void OnPositional_F4(CallbackContext context);
 
-			void OnPositional_F5(InputAction.CallbackContext context);
+			void OnPositional_F5(CallbackContext context);
 
-			void OnPositional_F6(InputAction.CallbackContext context);
+			void OnPositional_F6(CallbackContext context);
 
-			void OnPositional_F7(InputAction.CallbackContext context);
+			void OnPositional_F7(CallbackContext context);
 
-			void OnPositional_F8(InputAction.CallbackContext context);
+			void OnPositional_F8(CallbackContext context);
 
-			void OnPositional_F9(InputAction.CallbackContext context);
+			void OnPositional_F9(CallbackContext context);
 
-			void OnPositional_F10(InputAction.CallbackContext context);
+			void OnPositional_F10(CallbackContext context);
 
-			void OnPositional_F11(InputAction.CallbackContext context);
+			void OnPositional_F11(CallbackContext context);
 
-			void OnPositional_F12(InputAction.CallbackContext context);
+			void OnPositional_F12(CallbackContext context);
 
-			void OnPositional_OEM1(InputAction.CallbackContext context);
+			void OnPositional_OEM1(CallbackContext context);
 
-			void OnPositional_OEM2(InputAction.CallbackContext context);
+			void OnPositional_OEM2(CallbackContext context);
 
-			void OnPositional_OEM3(InputAction.CallbackContext context);
+			void OnPositional_OEM3(CallbackContext context);
 
-			void OnPositional_OEM4(InputAction.CallbackContext context);
+			void OnPositional_OEM4(CallbackContext context);
 
-			void OnPositional_OEM5(InputAction.CallbackContext context);
+			void OnPositional_OEM5(CallbackContext context);
 		}
 
 		public interface IJoystickActions
 		{
-			void OnStick(InputAction.CallbackContext context);
+			void OnStick(CallbackContext context);
 
-			void OnTrigger(InputAction.CallbackContext context);
+			void OnTrigger(CallbackContext context);
 		}
 
 		public interface ITrackersActions
 		{
-			void OnLeftFoot(InputAction.CallbackContext context);
+			void OnLeftFoot(CallbackContext context);
 
-			void OnLeftFootTrackingState(InputAction.CallbackContext context);
+			void OnLeftFootTrackingState(CallbackContext context);
 
-			void OnRightFoot(InputAction.CallbackContext context);
+			void OnRightFoot(CallbackContext context);
 
-			void OnRightFootTrackingState(InputAction.CallbackContext context);
+			void OnRightFootTrackingState(CallbackContext context);
 
-			void OnLeftShoulder(InputAction.CallbackContext context);
+			void OnLeftShoulder(CallbackContext context);
 
-			void OnLeftShoulderTrackingState(InputAction.CallbackContext context);
+			void OnLeftShoulderTrackingState(CallbackContext context);
 
-			void OnRightShoulder(InputAction.CallbackContext context);
+			void OnRightShoulder(CallbackContext context);
 
-			void OnRightShoulderTrackingState(InputAction.CallbackContext context);
+			void OnRightShoulderTrackingState(CallbackContext context);
 
-			void OnLeftElbow(InputAction.CallbackContext context);
+			void OnLeftElbow(CallbackContext context);
 
-			void OnLeftElbowTrackingState(InputAction.CallbackContext context);
+			void OnLeftElbowTrackingState(CallbackContext context);
 
-			void OnRightElbow(InputAction.CallbackContext context);
+			void OnRightElbow(CallbackContext context);
 
-			void OnRightElbowTrackingState(InputAction.CallbackContext context);
+			void OnRightElbowTrackingState(CallbackContext context);
 
-			void OnLeftKnee(InputAction.CallbackContext context);
+			void OnLeftKnee(CallbackContext context);
 
-			void OnLeftKneeTrackingState(InputAction.CallbackContext context);
+			void OnLeftKneeTrackingState(CallbackContext context);
 
-			void OnRightKnee(InputAction.CallbackContext context);
+			void OnRightKnee(CallbackContext context);
 
-			void OnRightKneeTrackingState(InputAction.CallbackContext context);
+			void OnRightKneeTrackingState(CallbackContext context);
 
-			void OnWaist(InputAction.CallbackContext context);
+			void OnWaist(CallbackContext context);
 
-			void OnWaistTrackingState(InputAction.CallbackContext context);
+			void OnWaistTrackingState(CallbackContext context);
 
-			void OnChest(InputAction.CallbackContext context);
+			void OnChest(CallbackContext context);
 
-			void OnChestTrackingState(InputAction.CallbackContext context);
+			void OnChestTrackingState(CallbackContext context);
 		}
 
 		private readonly InputActionMap m_HMD;
