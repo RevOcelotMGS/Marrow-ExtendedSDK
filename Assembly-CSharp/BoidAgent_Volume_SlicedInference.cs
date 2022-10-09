@@ -1,3 +1,4 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System.Collections.Generic;
 using Unity.MLAgents;
 using Unity.MLAgentsExamples;

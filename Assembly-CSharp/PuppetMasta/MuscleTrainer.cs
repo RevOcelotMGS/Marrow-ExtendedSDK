@@ -1,9 +1,7 @@
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using SLZ.VRMK;
-using Unity.MLAgents;
-using Unity.MLAgents.Actuators;
-using Unity.MLAgents.Sensors;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -142,27 +140,7 @@ namespace PuppetMasta
 		{
 		}
 
-		public override void Initialize()
-		{
-		}
-
 		private void SetEnvParams()
-		{
-		}
-
-		public override void OnEpisodeBegin()
-		{
-		}
-
-		public override void CollectObservations(VectorSensor sensor)
-		{
-		}
-
-		public override void OnActionReceived(ActionBuffers actionBuffers)
-		{
-		}
-
-		public override void Heuristic([In] ActionBuffers actionsOut)
 		{
 		}
 

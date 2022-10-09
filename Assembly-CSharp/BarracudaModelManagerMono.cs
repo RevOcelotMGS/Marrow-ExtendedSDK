@@ -1,9 +1,9 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
-using Unity.Barracuda;
 using UnityEngine;
 
 public class BarracudaModelManagerMono : MonoBehaviour
@@ -11,10 +11,6 @@ public class BarracudaModelManagerMono : MonoBehaviour
 	[Tooltip("The neural network to do inference with")]
 	[Header("Model/Inference Pipeline Specific")]
 	public NNModel srcModel;
-
-	private Model model;
-
-	private IWorker engine;
 
 	[Tooltip("How many layers to operate on per BMM output tick")]
 	public int nb_network_slices;
