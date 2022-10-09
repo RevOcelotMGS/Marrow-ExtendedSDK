@@ -28,10 +28,6 @@ namespace Dynamite3D.RealIvy
 			return default(int);
 		}
 
-		public void InitIvyEditor(RuntimeGrowthParameters growthParameters, IvyContainer ivyContainer, IvyParameters ivyParameters)
-		{
-		}
-
 		public RuntimeBakedIvy()
 			: base()
 		{
