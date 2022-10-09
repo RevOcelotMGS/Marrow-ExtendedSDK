@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
 using System.Threading;
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using Cysharp.Threading.Tasks;
 using Cysharp.Threading.Tasks.CompilerServices;
-using Unity.Barracuda;
 using UnityEngine;
 
 public class BarracudaModelManager
@@ -56,10 +56,6 @@ public class BarracudaModelManager
 	public int batch_size;
 
 	public InferenceAgent[] agent_list;
-
-	private Model model;
-
-	private IWorker engine;
 
 	public int nb_agents_collected;
 

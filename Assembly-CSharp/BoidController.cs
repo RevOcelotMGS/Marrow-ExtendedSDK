@@ -3,10 +3,9 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using PuppetMasta;
 using SLZ.AI;
-using Unity.MLAgents;
-using Unity.MLAgents.Actuators;
 using UnityEngine;
 
 public class BoidController : MonoBehaviour

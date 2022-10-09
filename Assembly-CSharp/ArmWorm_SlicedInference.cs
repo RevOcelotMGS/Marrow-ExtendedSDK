@@ -1,3 +1,4 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System.Collections.Generic;
 using Unity.MLAgents;
 using Unity.MLAgentsExamples;
@@ -87,8 +88,6 @@ public class ArmWorm_SlicedInference : InferenceAgent
 	public bool wrist_z_rot_heur;
 
 	public bool friction_switch;
-
-	private EnvironmentParameters m_EnvParams;
 
 	private Dictionary<string, float[]> lastActionDict;
 

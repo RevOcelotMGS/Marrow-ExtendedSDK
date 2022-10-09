@@ -1,8 +1,6 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using Unity.MLAgents;
-using Unity.MLAgents.Actuators;
-using Unity.MLAgents.Sensors;
 using Unity.MLAgentsExamples;
 using UnityEngine;
 
@@ -91,8 +89,6 @@ public class ArmWormAgent : Agent
 	public bool wrist_z_rot_heur;
 
 	public bool friction_switch;
-
-	private EnvironmentParameters m_EnvParams;
 
 
 }

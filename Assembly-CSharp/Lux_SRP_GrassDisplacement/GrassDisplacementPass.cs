@@ -43,7 +43,7 @@ namespace Lux_SRP_GrassDisplacement
 		{
 		}
 
-		public override void Execute(ScriptableRenderContext context, RenderingData renderingData)
+		public override void Execute(ScriptableRenderContext context, ref RenderingData renderingData)
 		{
 		}
 

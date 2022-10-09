@@ -1,9 +1,7 @@
+using Assets.Marrow_ExtendedSDK.StubClasses;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
-using Unity.MLAgents;
-using Unity.MLAgents.Actuators;
-using Unity.MLAgents.Sensors;
 using Unity.MLAgentsExamples;
 using UnityEngine;
 
@@ -17,8 +15,6 @@ public class ArmWormAgent_SlicedTrainer : Agent
 	private int current_updates;
 
 	private bool observation_ready;
-
-	private ActionBuffers delayed_buffers;
 
 	public StatsRecorder statsRecorder;
 
@@ -104,8 +100,6 @@ public class ArmWormAgent_SlicedTrainer : Agent
 	public bool wrist_z_rot_heur;
 
 	public bool friction_switch;
-
-	private EnvironmentParameters m_EnvParams;
 
 	public bool log_cum_reward;
 

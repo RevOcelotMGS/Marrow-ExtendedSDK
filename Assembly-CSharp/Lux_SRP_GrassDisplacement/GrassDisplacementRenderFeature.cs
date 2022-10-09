@@ -37,7 +37,7 @@ namespace Lux_SRP_GrassDisplacement
 		{
 		}
 
-		public override void AddRenderPasses(ScriptableRenderer renderer, RenderingData renderingData)
+		public override void AddRenderPasses(ScriptableRenderer renderer, ref RenderingData renderingData)
 		{
 		}
 
