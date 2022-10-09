@@ -23,8 +23,6 @@ public class LoadingScreenPackage : MonoBehaviour
 
 	public Color renderModelColor;
 
-	private HmdColor_t _overlayRenderModelColor;
-
 	private Color _overlayRenderModelColor_U;
 
 	[Header("Scaler")]
