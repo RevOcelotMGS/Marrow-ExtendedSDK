@@ -142,7 +142,27 @@ namespace PuppetMasta
 		{
 		}
 
+		public override void Initialize()
+		{
+		}
+
 		private void SetEnvParams()
+		{
+		}
+
+		public override void OnEpisodeBegin()
+		{
+		}
+
+		public override void CollectObservations(VectorSensor sensor)
+		{
+		}
+
+		public override void OnActionReceived(ActionBuffers actionBuffers)
+		{
+		}
+
+		public override void Heuristic([In] ActionBuffers actionsOut)
 		{
 		}
 

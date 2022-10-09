@@ -22,7 +22,6 @@ namespace SplineMesh
 
 		internal Mesh Mesh
 		{
-			[IsReadOnly]
 			get;
 		}
 

@@ -103,13 +103,53 @@ namespace PuppetMasta
 
 		private TriggerRefProxy _grappleTarget;
 
+		protected override void OnInitiate()
+		{
+		}
+
+		public override void OnReactivate(int phase = 0)
+		{
+		}
+
 		public void LinkJump(Transform jumpTarg, float jumpForce = 7f)
+		{
+		}
+
+		public override void KillStart()
 		{
 		}
 
 		private IEnumerator SelfDespawn(float duration)
 		{
 			return null;
+		}
+
+		public override void KillEnd()
+		{
+		}
+
+		protected override void OnUpdate()
+		{
+		}
+
+		protected override void OnReadBehaviour()
+		{
+		}
+
+		protected override void OnWriteBehaviour()
+		{
+		}
+
+		protected override void OnMuscleHitBehaviour(MuscleHit hit)
+		{
+		}
+
+		protected override void OnMuscleCollisionBehaviour(MuscleCollision m)
+		{
+		}
+
+		protected override void ResetAnimator()
+		{
 		}
 
 		protected void Jump(JumpType jType)
@@ -137,6 +177,10 @@ namespace PuppetMasta
 		{
 		}
 
+		protected override void OnHandAttached(InteractableHost host, Hand hand)
+		{
+		}
+
 		private bool AttachToFace(Rigidbody face, TriggerRefProxy trp, bool preAttach = false, bool isPlayer = true)
 		{
 			return default(bool);
@@ -156,6 +200,26 @@ namespace PuppetMasta
 		}
 
 		private void PlayerDeathDetachRemove()
+		{
+		}
+
+		protected override void AiUpdate()
+		{
+		}
+
+		protected override void AiTick()
+		{
+		}
+
+		protected override void SwitchMentalState(MentalState mState)
+		{
+		}
+
+		protected override void ReturnToPreAgro()
+		{
+		}
+
+		protected override void SwitchLocoState(LocoState lState, float coolDown = 0f, bool forceSwitch = false)
 		{
 		}
 

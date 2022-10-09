@@ -71,9 +71,33 @@ namespace PuppetMasta
 		{
 		}
 
+		protected override void OnActivate()
+		{
+		}
+
+		protected override void OnDeactivate()
+		{
+		}
+
+		public override void OnReactivate(int phase = 0)
+		{
+		}
+
 		private IEnumerator SmoothActivate()
 		{
 			return null;
+		}
+
+		protected override void OnFixedUpdate()
+		{
+		}
+
+		protected override void OnLateUpdate()
+		{
+		}
+
+		public override void Resurrect()
+		{
 		}
 
 		private float GetBlendTarget(float groundHeight)

@@ -35,6 +35,10 @@ namespace PuppetMasta
 		{
 		}
 
+		public override void OnCollisionEnter(Collision collision)
+		{
+		}
+
 		private void OnCollisionStay(Collision collision)
 		{
 		}

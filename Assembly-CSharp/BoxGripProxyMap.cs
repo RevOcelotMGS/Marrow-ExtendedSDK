@@ -10,12 +10,26 @@ using UnityEngine;
 
 public class BoxGripProxyMap : BoneProxyMap<BoxGripProxy, BoxGrip>
 {
+	protected override void MapProperties()
+	{
+	}
+
+	public override void BeforeGenerateReal()
+	{
+	}
+
+	public override void AfterGenerateReal()
+	{
+	}
 
 	public UniTaskVoid SetupHandPoses()
 	{
 		return default(UniTaskVoid);
 	}
 
+	public override void MapMethods()
+	{
+	}
 
 	public BoxGripProxyMap()
 		: base()

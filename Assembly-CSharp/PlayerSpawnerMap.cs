@@ -16,6 +16,18 @@ public class PlayerSpawnerMap : BoneProxyMap<PlayerSpawner, RigManager>
 
 	public bool generating;
 
+	public override void MapMethods()
+	{
+	}
+
+	protected override void MapProperties()
+	{
+	}
+
+	public override void GenerateReal()
+	{
+	}
+
 	public UniTaskVoid SpawnPlayer()
 	{
 		return default(UniTaskVoid);

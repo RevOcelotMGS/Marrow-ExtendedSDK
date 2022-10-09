@@ -234,6 +234,10 @@ namespace PuppetMasta
 			}
 		}
 
+		protected override void OnInitiate()
+		{
+		}
+
 		public void BlockCollisions(float time)
 		{
 		}
@@ -243,6 +247,30 @@ namespace PuppetMasta
 		}
 
 		public void ChangeEmissiveColor(Color color)
+		{
+		}
+
+		public override void OnReactivate(int phase = 0)
+		{
+		}
+
+		public override void Resurrect()
+		{
+		}
+
+		public override void KillStart()
+		{
+		}
+
+		public override void KillEnd()
+		{
+		}
+
+		protected override void OnUpdate()
+		{
+		}
+
+		protected override void OnReadBehaviour()
 		{
 		}
 

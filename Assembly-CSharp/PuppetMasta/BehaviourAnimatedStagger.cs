@@ -70,6 +70,18 @@ namespace PuppetMasta
 		[HideInInspector]
 		public Vector3 forward;
 
+		protected override void OnInitiate()
+		{
+		}
+
+		protected override void OnActivate()
+		{
+		}
+
+		public override void OnReactivate(int phase = 0)
+		{
+		}
+
 		private IEnumerator LoseBalance()
 		{
 			return null;

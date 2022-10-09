@@ -273,7 +273,47 @@ namespace PuppetMasta
 		{
 		}
 
+		public override void OnReactivate(int phase = 0)
+		{
+		}
+
 		public void Reset(Vector3 position, Quaternion rotation)
+		{
+		}
+
+		public override void OnTeleport(Quaternion deltaRotation, Vector3 deltaPosition, Vector3 pivot, bool moveToTarget)
+		{
+		}
+
+		protected override void OnInitiate()
+		{
+		}
+
+		protected override void OnActivate()
+		{
+		}
+
+		public override void KillStart()
+		{
+		}
+
+		public override void KillEnd()
+		{
+		}
+
+		public override void Resurrect()
+		{
+		}
+
+		protected override void OnDeactivate()
+		{
+		}
+
+		protected override void OnFixedUpdate()
+		{
+		}
+
+		protected override void OnLateUpdate()
 		{
 		}
 
@@ -282,7 +322,19 @@ namespace PuppetMasta
 			return default(bool);
 		}
 
+		protected override void OnReadBehaviour()
+		{
+		}
+
 		private void BlendMuscleMapping(int muscleIndex, bool to)
+		{
+		}
+
+		public override void OnMuscleAdded(Muscle m)
+		{
+		}
+
+		public override void OnMuscleRemoved(Muscle m)
 		{
 		}
 
@@ -291,6 +343,10 @@ namespace PuppetMasta
 		}
 
 		protected void RotateTarget(Quaternion rotation)
+		{
+		}
+
+		protected override void GroundTarget(LayerMask layers)
 		{
 		}
 
@@ -335,6 +391,14 @@ namespace PuppetMasta
 		}
 
 		public void Unpin()
+		{
+		}
+
+		protected override void OnMuscleHitBehaviour(MuscleHit hit)
+		{
+		}
+
+		protected override void OnMuscleCollisionBehaviour(MuscleCollision m)
 		{
 		}
 

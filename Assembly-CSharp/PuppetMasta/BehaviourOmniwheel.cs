@@ -218,7 +218,47 @@ namespace PuppetMasta
 
 		private float _t;
 
+		protected override void OnInitiate()
+		{
+		}
+
+		public override void OnReactivate(int phase = 0)
+		{
+		}
+
 		public void StartDeathFlicker()
+		{
+		}
+
+		public override void KillStart()
+		{
+		}
+
+		public override void KillEnd()
+		{
+		}
+
+		protected override void OnUpdate()
+		{
+		}
+
+		protected override void OnReadBehaviour()
+		{
+		}
+
+		protected override void OnWriteBehaviour()
+		{
+		}
+
+		protected override void OnMuscleHitBehaviour(MuscleHit hit)
+		{
+		}
+
+		protected override void OnMuscleCollisionBehaviour(MuscleCollision m)
+		{
+		}
+
+		protected override void ResetAnimator()
 		{
 		}
 
@@ -230,6 +270,14 @@ namespace PuppetMasta
 		private IEnumerator SelfDespawn(float duration)
 		{
 			return null;
+		}
+
+		public override void Freeze()
+		{
+		}
+
+		public override void Unfreeze()
+		{
 		}
 
 		public void JOYSTICK(PropJoystick.JoystickData joyData)
@@ -249,6 +297,26 @@ namespace PuppetMasta
 		}
 
 		private void TickAttack()
+		{
+		}
+
+		protected override void AiUpdate()
+		{
+		}
+
+		protected override void AiTick()
+		{
+		}
+
+		protected override void SwitchMentalState(MentalState mState)
+		{
+		}
+
+		protected override void SwitchLocoState(LocoState lState, float coolDown = 0f, bool forceSwitch = false)
+		{
+		}
+
+		protected override void ReturnToPreAgro()
 		{
 		}
 

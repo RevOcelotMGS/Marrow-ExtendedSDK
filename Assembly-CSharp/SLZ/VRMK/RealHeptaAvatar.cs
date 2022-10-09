@@ -80,31 +80,31 @@ namespace SLZ.VRMK
 
 		private Vector3 _palmRtPercDefault;
 
-		public override void Awake()
+		public void Awake()
 		{
 		}
 
-		public override void PrecomputeAvatar(float eyeHeight)
+		public void PrecomputeAvatar(float eyeHeight)
 		{
 		}
 
-		public override void RefreshBodyMeasurements(Avatar calibrationAvatar)
+		public void RefreshBodyMeasurements(Avatar calibrationAvatar)
 		{
 		}
 
-		public override void SetPlayerWingspan(float wingspan, float height)
+		public void SetPlayerWingspan(float wingspan, float height)
 		{
 		}
 
-		public override void SetPlayerInseam(float inseem, float height)
+		public void SetPlayerInseam(float inseem, float height)
 		{
 		}
 
-		public override void RefreshBodyMeasurements()
+		public void RefreshBodyMeasurements()
 		{
 		}
 
-		public override void OnDrawGizmosSelected()
+		public void OnDrawGizmosSelected()
 		{
 		}
 

@@ -19,7 +19,6 @@ public class RadioPlayer : MonoBehaviour
 	[HideInInspector]
 	public RadioStation[] stations;
 
-	[System.Runtime.CompilerServices.Nullable(2)]
 	public RadioStation selectedStation;
 
 	public RadioManager radioManager;

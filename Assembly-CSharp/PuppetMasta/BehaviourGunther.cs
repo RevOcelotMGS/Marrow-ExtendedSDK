@@ -36,6 +36,46 @@ namespace PuppetMasta
 
 		private bool _playerInTrigger;
 
+		protected override void OnInitiate()
+		{
+		}
+
+		public override void OnReactivate(int phase = 0)
+		{
+		}
+
+		public override void Resurrect()
+		{
+		}
+
+		public override void KillStart()
+		{
+		}
+
+		public override void KillEnd()
+		{
+		}
+
+		protected override void OnUpdate()
+		{
+		}
+
+		protected override void OnReadBehaviour()
+		{
+		}
+
+		protected override void OnWriteBehaviour()
+		{
+		}
+
+		protected override void OnMuscleHitBehaviour(MuscleHit hit)
+		{
+		}
+
+		protected override void OnMuscleCollisionBehaviour(MuscleCollision m)
+		{
+		}
+
 		private float ProcessImpulse(Collision c, Rigidbody thisRb)
 		{
 			return default(float);

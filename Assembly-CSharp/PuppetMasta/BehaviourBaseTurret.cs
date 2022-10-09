@@ -56,9 +56,49 @@ namespace PuppetMasta
 			}
 		}
 
+		protected override void ResetAnimator()
+		{
+		}
+
+		protected override void OnInitiate()
+		{
+		}
+
+		public override void OnReactivate(int phase = 0)
+		{
+		}
+
+		public override void Freeze()
+		{
+		}
+
+		public override void Unfreeze()
+		{
+		}
+
+		protected override void OnUpdate()
+		{
+		}
+
 		private IEnumerator SelfDespawn(float duration)
 		{
 			return null;
+		}
+
+		public override void KillStart()
+		{
+		}
+
+		public override void KillEnd()
+		{
+		}
+
+		protected override void OnMuscleHitBehaviour(MuscleHit hit)
+		{
+		}
+
+		protected override void OnMuscleCollisionBehaviour(MuscleCollision m)
+		{
 		}
 
 		public new void SetAgro(TriggerRefProxy agroTarget)
@@ -69,7 +109,35 @@ namespace PuppetMasta
 		{
 		}
 
+		protected override void OnWriteBehaviour()
+		{
+		}
+
+		protected override void OnReadBehaviour()
+		{
+		}
+
 		private void Awake()
+		{
+		}
+
+		protected override void AiUpdate()
+		{
+		}
+
+		protected override void AiTick()
+		{
+		}
+
+		protected override void SwitchMentalState(MentalState mState)
+		{
+		}
+
+		protected override void SwitchLocoState(LocoState lState, float coolDown = 0f, bool forceSwitch = false)
+		{
+		}
+
+		protected override void ReturnToPreAgro()
 		{
 		}
 

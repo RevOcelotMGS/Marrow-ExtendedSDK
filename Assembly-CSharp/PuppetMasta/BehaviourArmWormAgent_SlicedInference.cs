@@ -136,6 +136,10 @@ namespace PuppetMasta
 		{
 		}
 
+		public override void Setup()
+		{
+		}
+
 		private void Awake()
 		{
 		}
@@ -176,9 +180,17 @@ namespace PuppetMasta
 		{
 		}
 
+		public override void CollectObservations()
+		{
+		}
+
 		public float GetMatchingVelocityReward(Vector3 velocityGoal, Vector3 actualVelocity)
 		{
 			return default(float);
+		}
+
+		public override void OnActionReceived(Dictionary<string, float[]> actionBuffers)
+		{
 		}
 
 		private void FixedUpdate()

@@ -89,11 +89,35 @@ namespace PuppetMasta
 
 		public bool actionReady;
 
+		protected override void OnInitiate()
+		{
+		}
+
+		public override void OnReactivate(int phase = 0)
+		{
+		}
+
+		public override void KillStart()
+		{
+		}
+
+		public override void KillEnd()
+		{
+		}
+
 		public void SetArtTargetRotation(Transform transform, float x, float y, float z, float lowX, float highX, float lowY, float highY, float lowZ, float highZ)
 		{
 		}
 
 		public void SetBodyPartStrength(float spineStrength, float legStrength)
+		{
+		}
+
+		protected override void OnUpdate()
+		{
+		}
+
+		protected override void OnLateUpdate()
 		{
 		}
 
@@ -110,9 +134,45 @@ namespace PuppetMasta
 		{
 		}
 
+		protected override void OnReadBehaviour()
+		{
+		}
+
+		protected override void OnWriteBehaviour()
+		{
+		}
+
+		protected override void OnMuscleHitBehaviour(MuscleHit hit)
+		{
+		}
+
+		protected override void OnMuscleCollisionBehaviour(MuscleCollision m)
+		{
+		}
+
+		protected override void ResetAnimator()
+		{
+		}
+
 		private IEnumerator SelfDespawn(float duration)
 		{
 			return null;
+		}
+
+		public override void Freeze()
+		{
+		}
+
+		public override void Unfreeze()
+		{
+		}
+
+		protected override void SwitchMentalState(MentalState mState)
+		{
+		}
+
+		protected override void SwitchLocoState(LocoState lState, float coolDown = 0f, bool forceSwitch = false)
+		{
 		}
 
 		public BehaviourArmWorm_Training()

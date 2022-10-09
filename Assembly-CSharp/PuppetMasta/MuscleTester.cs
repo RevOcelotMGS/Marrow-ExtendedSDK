@@ -140,6 +140,26 @@ namespace PuppetMasta
 		{
 		}
 
+		public override void Initialize()
+		{
+		}
+
+		public override void OnEpisodeBegin()
+		{
+		}
+
+		public override void CollectObservations(VectorSensor sensor)
+		{
+		}
+
+		public override void OnActionReceived(ActionBuffers actionBuffers)
+		{
+		}
+
+		public override void Heuristic([In] ActionBuffers actionsOut)
+		{
+		}
+
 		private void RandomizeAnimationCurve(AnimationCurve animCurve, float nb_inds)
 		{
 		}

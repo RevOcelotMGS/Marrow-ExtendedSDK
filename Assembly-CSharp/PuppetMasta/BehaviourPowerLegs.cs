@@ -223,6 +223,10 @@ namespace PuppetMasta
 			}
 		}
 
+		protected override void OnInitiate()
+		{
+		}
+
 		public new void BlockCollisions(float blockTime)
 		{
 		}
@@ -231,9 +235,53 @@ namespace PuppetMasta
 		{
 		}
 
+		public override void OnReactivate(int phase = 0)
+		{
+		}
+
+		public override void KillStart()
+		{
+		}
+
+		public override void KillEnd()
+		{
+		}
+
+		protected override void OnUpdate()
+		{
+		}
+
+		protected override void OnReadBehaviour()
+		{
+		}
+
+		protected override void OnWriteBehaviour()
+		{
+		}
+
+		protected override void OnMuscleHitBehaviour(MuscleHit hit)
+		{
+		}
+
+		protected override void OnMuscleCollisionBehaviour(MuscleCollision m)
+		{
+		}
+
+		protected override void ResetAnimator()
+		{
+		}
+
 		private IEnumerator SelfDespawn(float duration)
 		{
 			return null;
+		}
+
+		public override void Freeze()
+		{
+		}
+
+		public override void Unfreeze()
+		{
 		}
 
 		public void Awake()
@@ -260,11 +308,31 @@ namespace PuppetMasta
 		{
 		}
 
+		protected override void AiUpdate()
+		{
+		}
+
+		protected override void AiTick()
+		{
+		}
+
+		protected override void SwitchMentalState(MentalState mState)
+		{
+		}
+
+		protected override void SwitchLocoState(LocoState lState, float coolDown = 0f, bool forceSwitch = false)
+		{
+		}
+
 		public void UpdateUprightUsage()
 		{
 		}
 
 		public void IkFootToggle(bool ikOn)
+		{
+		}
+
+		protected override void ReturnToPreAgro()
 		{
 		}
 

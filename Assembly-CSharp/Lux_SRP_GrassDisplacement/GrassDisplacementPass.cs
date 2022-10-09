@@ -39,6 +39,18 @@ namespace Lux_SRP_GrassDisplacement
 
 		private FilteringSettings transparentFilterSettings { get; set; }
 
+		public override void Configure(CommandBuffer cmd, RenderTextureDescriptor cameraTextureDescriptor)
+		{
+		}
+
+		public override void Execute(ScriptableRenderContext context, RenderingData renderingData)
+		{
+		}
+
+		public override void OnCameraCleanup(CommandBuffer cmd)
+		{
+		}
+
 		public GrassDisplacementPass()
 			: base()
 		{

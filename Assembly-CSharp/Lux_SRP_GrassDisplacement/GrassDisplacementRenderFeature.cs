@@ -29,5 +29,21 @@ namespace Lux_SRP_GrassDisplacement
 			}
 		}
 
+		public GrassDisplacementSettings settings;
+
+		private GrassDisplacementPass m_GrassDisplacementPass;
+
+		public override void Create()
+		{
+		}
+
+		public override void AddRenderPasses(ScriptableRenderer renderer, RenderingData renderingData)
+		{
+		}
+
+		public GrassDisplacementRenderFeature()
+			: base()
+		{
+		}
 	}
 }

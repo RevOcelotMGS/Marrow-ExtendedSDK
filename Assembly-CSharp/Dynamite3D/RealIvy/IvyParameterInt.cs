@@ -10,6 +10,10 @@ namespace Dynamite3D.RealIvy
 		{
 		}
 
+		public override void UpdateValue(float value)
+		{
+		}
+
 		public static implicit operator int(IvyParameterInt intParameter)
 		{
 			return default(int);

@@ -157,11 +157,23 @@ namespace PuppetMasta
 		{
 		}
 
+		public override void Initialize()
+		{
+		}
+
 		private void SpawnTarget(Transform prefab, Vector3 pos)
 		{
 		}
 
+		public override void OnEpisodeBegin()
+		{
+		}
+
 		public void CollectObservationBodyPart(ArtBodyPart bp, VectorSensor sensor)
+		{
+		}
+
+		public override void CollectObservations(VectorSensor sensor)
 		{
 		}
 
@@ -175,6 +187,14 @@ namespace PuppetMasta
 		}
 
 		private void ArmJump()
+		{
+		}
+
+		public override void Heuristic([In] ActionBuffers actionBuffers)
+		{
+		}
+
+		public override void OnActionReceived(ActionBuffers actionBuffers)
 		{
 		}
 

@@ -9,13 +9,11 @@ namespace SLZ.Data.SaveData
 	{
 		public SpawnableCrateReference From
 		{
-			[IsReadOnly]
 			get;
 			private set; }
 
 		public SpawnableCrateReference To
 		{
-			[IsReadOnly]
 			get;
 			private set; }
 	}

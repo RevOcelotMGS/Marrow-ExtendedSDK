@@ -13,6 +13,38 @@ namespace PuppetMasta
 
 		public float loseBalanceAngle;
 
+		protected override void OnInitiate()
+		{
+		}
+
+		protected override void OnActivate()
+		{
+		}
+
+		public override void OnReactivate(int phase = 0)
+		{
+		}
+
+		protected override void OnDeactivate()
+		{
+		}
+
+		protected override void OnFixedUpdate()
+		{
+		}
+
+		protected override void OnLateUpdate()
+		{
+		}
+
+		protected override void OnMuscleHitBehaviour(MuscleHit hit)
+		{
+		}
+
+		protected override void OnMuscleCollisionBehaviour(MuscleCollision m)
+		{
+		}
+
 		public BehaviourTemplate()
 			: base()
 		{

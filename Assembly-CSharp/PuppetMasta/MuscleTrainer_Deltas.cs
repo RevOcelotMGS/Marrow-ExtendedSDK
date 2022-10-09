@@ -209,13 +209,33 @@ namespace PuppetMasta
 		{
 		}
 
+		public override void Initialize()
+		{
+		}
+
 		private void SetEnvParams()
+		{
+		}
+
+		public override void OnEpisodeBegin()
+		{
+		}
+
+		public override void CollectObservations(VectorSensor sensor)
 		{
 		}
 
 		private float AnimationCurveAUC(AnimationCurve curve)
 		{
 			return default(float);
+		}
+
+		public override void OnActionReceived(ActionBuffers actionBuffers)
+		{
+		}
+
+		public override void Heuristic([In] ActionBuffers actionsOut)
+		{
 		}
 
 		private void ResetAvgLosses()

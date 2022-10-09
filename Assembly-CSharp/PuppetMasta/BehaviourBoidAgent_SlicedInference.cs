@@ -61,6 +61,10 @@ namespace PuppetMasta
 		{
 		}
 
+		public override void Setup()
+		{
+		}
+
 		public void Initialize()
 		{
 		}
@@ -85,7 +89,15 @@ namespace PuppetMasta
 		{
 		}
 
+		public override void OnActionReceived(Dictionary<string, float[]> actionBuffers)
+		{
+		}
+
 		private void FixedUpdate()
+		{
+		}
+
+		public override void CollectObservations()
 		{
 		}
 
