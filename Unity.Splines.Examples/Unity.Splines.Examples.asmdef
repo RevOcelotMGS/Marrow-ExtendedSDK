@@ -1,0 +1,8 @@
+{
+  "name": "Unity.Splines.Examples",
+  "references": [
+    "Unity.Splines",
+    "Unity.Mathematics"
+  ],
+  "allowUnsafeCode": true
+}

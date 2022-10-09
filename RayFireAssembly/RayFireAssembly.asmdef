@@ -1,0 +1,7 @@
+{
+  "name": "RayFireAssembly",
+  "references": [
+    "RFLib_DotNet_2018_andr"
+  ],
+  "allowUnsafeCode": true
+}
