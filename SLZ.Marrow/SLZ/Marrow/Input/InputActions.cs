@@ -8,7 +8,7 @@ using UnityEngine.InputSystem.Utilities;
 
 namespace SLZ.Marrow.Input
 {
-	public class InputActions : IInputActionCollection2, IInputActionCollection, IEnumerable<InputAction>, IEnumerable, IDisposable
+	public class InputActions : IInputActionCollection, IEnumerable<InputAction>, IEnumerable, IDisposable
 	{
 		public struct HMDActions
 		{

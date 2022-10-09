@@ -11,8 +11,8 @@ namespace SLZ.Marrow.Plugins
 
 		private bool _disposedValue;
 
-		[TupleElementNames(new string[] { "type", "attribute" })]
-		private List<ValueTuple<Type, MarrowPluginAttribute>> PendingPlugins;
+		/*[TupleElementNames(new string[] { "type", "attribute" })]
+		private List<ValueTuple<Type, MarrowPluginAttribute>> PendingPlugins;*/
 
 		public static PluginTransaction OpenTransaction()
 		{
@@ -31,9 +31,9 @@ namespace SLZ.Marrow.Plugins
 		{
 		}
 
-		public void AddPlugin([TupleElementNames(new string[] { "type", "attribute" })] ValueTuple<Type, MarrowPluginAttribute> type)
+		/*public void AddPlugin([TupleElementNames(new string[] { "type", "attribute" })] ValueTuple<Type, MarrowPluginAttribute> type)
 		{
-		}
+		}*/
 
 		public bool ContainsPluginType(Type pluginType)
 		{

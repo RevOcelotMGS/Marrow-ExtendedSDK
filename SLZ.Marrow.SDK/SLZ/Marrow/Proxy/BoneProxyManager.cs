@@ -98,9 +98,9 @@ namespace SLZ.Marrow.Proxy
 			return null;
 		}
 
-		protected override void OnEnable()
+		/*protected override void OnEnable()
 		{
-		}
+		}*/
 
 		[ContextMenu("Reset")]
 		private void Reset()

@@ -29,10 +29,10 @@ namespace SLZ.Marrow.Console
 			return null;
 		}
 
-		protected virtual ValueTuple<CommandStatus, string, object> ParseTokenAtIndex([TupleElementNames(new string[] { "token", "parsed" })] List<ValueTuple<string, object>> previousTokens, int index, string token)
+		/*protected virtual ValueTuple<CommandStatus, string, object> ParseTokenAtIndex([TupleElementNames(new string[] { "token", "parsed" })] List<ValueTuple<string, object>> previousTokens, int index, string token)
 		{
 			return default(ValueTuple<CommandStatus, string, object>);
-		}
+		}*/
 
 		public virtual IUniTaskAsyncEnumerable<object> RunCommand(string command)
 		{

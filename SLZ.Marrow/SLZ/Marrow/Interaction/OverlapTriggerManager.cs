@@ -17,8 +17,8 @@ namespace SLZ.Marrow.Interaction
 
 		private readonly Dictionary<GameObject, HashSet<GameObject>> _helperPairLookup;
 
-		[TupleElementNames(new string[] { "type", "trigger", "gameObject" })]
-		private readonly List<ValueTuple<EventType, OverlapTrigger, GameObject>> _triggerEvents;
+		/*[TupleElementNames(new string[] { "type", "trigger", "gameObject" })]
+		private readonly List<ValueTuple<EventType, OverlapTrigger, GameObject>> _triggerEvents;*/
 
 		~OverlapTriggerManager()
 		{
