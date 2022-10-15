@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5542b3ba5a6fbb419d54db37df449ba, type: 3}
+  m_Name: 22 LR
+  m_EditorClassIdentifier:
+  projectile: {fileID: 11400000, guid: 32d33a37747e84741a149ac3f2a3894d, type: 2}
+  cartridgeSpawnable:
+    crateRef:
+      _barcode:
+        _id: c1534c5a-89ec-414f-a99b-6b3043617274
+        generated: 1
+      _version: 0.0.0
+      _palletBarcode:
+        _id: fa534c5a-8682-4713-8f50-c62e424c4144
+        generated: 1
+    policyData: {fileID: 11400000, guid: 91b5e012ccf489349bb07264cce07636, type: 2}
+  cartridgeCaseSpawnable:
+    crateRef:
+      _barcode:
+        _id: c1534c5a-d181-417c-b4d0-673d43617274
+        generated: 1
+      _version: 0.0.0
+      _palletBarcode:
+        _id: fa534c5a-8682-4713-8f50-c62e424c4144
+        generated: 1
+    policyData: {fileID: 11400000, guid: 91b5e012ccf489349bb07264cce07636, type: 2}

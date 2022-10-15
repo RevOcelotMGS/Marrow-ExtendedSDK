@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c9e8f88bfa651549acc4982acc72f43, type: 3}
+  m_Name: 9mm Projectile
+  m_EditorClassIdentifier:
+  spawnable:
+    crateRef:
+      _barcode:
+        _id: c1534c5a-00d0-44de-ab14-19e850726f6a
+        generated: 1
+      _version: 0.0.1
+      _palletBarcode:
+        _id: fa534c5a-83ee-4ec6-bd64-1fec424c4142
+        generated: 1
+    policyData: {fileID: 0}
+  mass: 0.00745
+  startVelocity: 350
+  AttackType: 1
+  damageMultiplier: 0.9
+  count: 1
+  emissionType: 0
+  angle: 0
+  radius: 0

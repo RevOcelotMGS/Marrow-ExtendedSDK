@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5542b3ba5a6fbb419d54db37df449ba, type: 3}
+  m_Name: 9x19mm Parabellum
+  m_EditorClassIdentifier:
+  projectile: {fileID: 11400000, guid: fb035f9d43ab22249a2e9104106827aa, type: 2}
+  cartridgeSpawnable:
+    crateRef:
+      _barcode:
+        _id: c1534c5a-7901-456e-8ed2-7d7f396d6d43
+        generated: 1
+      _version: 0.0.1
+      _palletBarcode:
+        _id: fa534c5a-83ee-4ec6-bd64-1fec424c4142
+        generated: 1
+    policyData: {fileID: 11400000, guid: 91b5e012ccf489349bb07264cce07636, type: 2}
+  cartridgeCaseSpawnable:
+    crateRef:
+      _barcode:
+        _id: c1534c5a-0812-45fe-b074-0875396d6d43
+        generated: 1
+      _version: 0.0.1
+      _palletBarcode:
+        _id: fa534c5a-83ee-4ec6-bd64-1fec424c4142
+        generated: 1
+    policyData: {fileID: 11400000, guid: 91b5e012ccf489349bb07264cce07636, type: 2}

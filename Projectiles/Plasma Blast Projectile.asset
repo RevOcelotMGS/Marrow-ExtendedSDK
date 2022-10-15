@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c9e8f88bfa651549acc4982acc72f43, type: 3}
+  m_Name: Plasma Blast Projectile
+  m_EditorClassIdentifier:
+  spawnable:
+    crateRef:
+      _barcode:
+        _id: SLZ.BONELAB.CORE.Spawnable.ProjectilePlasmaSLZBallisticsVariant
+        generated: 1
+      _version: 0.0.3
+      _palletBarcode:
+        _id: SLZ.BONELAB.CORE
+        generated: 1
+    policyData: {fileID: 11400000, guid: 62777400a58a04048b53bdb84616d7e2, type: 2}
+  mass: 0.008
+  startVelocity: 150
+  AttackType: 9
+  damageMultiplier: 2
+  count: 1
+  emissionType: 0
+  angle: 0
+  radius: 0
