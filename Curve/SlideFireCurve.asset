@@ -9,6 +9,30 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d22957eaedd4f914a89ae3ae9139b02e, type: 3}
+  m_Script: {fileID: 11500000, guid: 685739d8c5b087e4b9b96589c29464eb, type: 3}
   m_Name: SlideFireCurve
-  m_EditorClassIdentifier:
+  m_EditorClassIdentifier: 
+  value:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 2.9380615
+      outSlope: 2.9380615
+      tangentMode: 0
+      weightedMode: 2
+      inWeight: 0
+      outWeight: 0.2630058
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 0.12257514
+      outSlope: 0.12257514
+      tangentMode: 0
+      weightedMode: 3
+      inWeight: 0.20086706
+      outWeight: 0.14186852
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
