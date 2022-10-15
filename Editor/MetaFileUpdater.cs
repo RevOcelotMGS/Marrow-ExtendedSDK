@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.Drawing.Drawing2D;
 using System.IO;
 using System.Linq;
 using Unity.VisualScripting;
@@ -21,11 +22,17 @@ namespace MetaFileUpdater
 
         static Dictionary<string, string> replacableGuids = new Dictionary<string, string>();
         static Dictionary<string, string> guidsWithoutLocalReplacement = new Dictionary<string, string>();
+        static Dictionary<string, string> allFoundGuids = new Dictionary<string, string>();
 
 
         public static void WriteLine(string arg) => UnityEngine.Debug.Log(arg);
         public static void WriteWarning(string arg) => UnityEngine.Debug.LogWarning(arg);
         public static void WriteError(string arg) => UnityEngine.Debug.LogError(arg);
+
+        public static string PathToLocal(string path) => path
+                .TrimStart(rootAssetsFolderOriginal)
+                .TrimStart(rootAssetsFolderNew)
+                .Replace("\\", "/");
 
         public static string Fix(string rootAssetsFolderOriginal, string rootAssetsFolderNew, bool autoFix)
         {
@@ -35,43 +42,68 @@ namespace MetaFileUpdater
 
             replacableGuids.Clear();
             guidsWithoutLocalReplacement.Clear();
+            allFoundGuids.Clear();
             autoFixedAny = false;
 
-            //Get all the meta files
-            string[] consideredExtensions = new string[]{
-                //".cs",
-                //".asset",
-                //".mixer",
-                "",
-            };
-
             var foundFiles = 0;
-            consideredExtensions.ToList().ForEach(extension =>
-            {
-                string[] oldMetaFilePaths = Directory.GetFiles(rootAssetsFolderOriginal, $"*{extension}.meta", SearchOption.AllDirectories);
-                string[] newMetaFilePaths = Directory.GetFiles(rootAssetsFolderNew, $"*{extension}.meta", SearchOption.AllDirectories);
+            if (File.Exists($"{rootAssetsFolderOriginal}/GuidCache")) { // Use the cache! Woot!
+                var lines = File.ReadAllLines($"{rootAssetsFolderOriginal}/GuidCache");
+                foundFiles += lines.Length;
+                string[] newMetaFilePaths = Directory.GetFiles(rootAssetsFolderNew, $"*.meta", SearchOption.AllDirectories);
+                var newMetaFilesLookup = new Dictionary<string, string>();
+                newMetaFilePaths.ToList().ForEach(path => {
+                    // Add both the file name, and local path to the lookup
+                    var fileName = Path.GetFileName(path);
+                    if (newMetaFilesLookup.ContainsKey(fileName)) {
+                        //WriteWarning($"Duplicate meta filename: {fileName}. May hook up the wrong reference.");
+                    } else {
+                        newMetaFilesLookup[fileName] = path;
+                    }
+                    if (!newMetaFilesLookup.ContainsKey(PathToLocal(path))) {
+                        newMetaFilesLookup[PathToLocal(path)] = path;
+                    }
+
+                });
+                FindReplacementGUIDs(
+                    lines.ToDictionary(p => rootAssetsFolderOriginal + p.Substring(32), p => p.Substring(0, 32)),
+                    newMetaFilesLookup);
+            } else { // We need to go through all the meta files - then we can cache their guid against them 
+                string[] newMetaFilePaths = Directory.GetFiles(rootAssetsFolderNew, $"*.meta", SearchOption.AllDirectories);
+                string[] oldMetaFilePaths = Directory.GetFiles(rootAssetsFolderOriginal, $"*.meta", SearchOption.AllDirectories);
                 foundFiles += oldMetaFilePaths.Length;
-                FindReplacementGUIDs(oldMetaFilePaths, newMetaFilePaths);
-            });
 
-            WriteLine($"Found {foundFiles} meta files in original directory");
+                var newMetaFilesLookup = new Dictionary<string, string>();
+                newMetaFilePaths.ToList().ForEach(path => {
+                    // Add both the file name, and local path to the lookup
+                    var fileName = Path.GetFileName(path);
+                    if (newMetaFilesLookup.ContainsKey(fileName)) {
+                        //WriteWarning($"Duplicate meta filename: {fileName}. May hook up the wrong reference.");
+                    } else {
+                        newMetaFilesLookup[fileName] = path;
+                    }
+                    if (!newMetaFilesLookup.ContainsKey(PathToLocal(path))) {
+                        newMetaFilesLookup[PathToLocal(path)] = path;
+                    }
+                });
 
-            string[] consideredLocalExtensionsToReplace = new string[]{
-                //"*.prefab",
-                //"*.asset",
-                //"*.mat",
-                "*",
-            };
+                WriteLine($"Found {foundFiles} meta files in original directory");
+
+                FindReplacementGUIDs(
+                    oldMetaFilePaths.ToDictionary(p => p, p => (string) null),
+                    newMetaFilesLookup);
+
+                // Cache the things we just found
+                File.WriteAllLines($"{rootAssetsFolderOriginal}/GuidCache", 
+                    allFoundGuids
+                        .Select((kv) => kv.Value + PathToLocal(kv.Key))
+                        .ToArray()
+                );
+            }
 
             var fixedAtLeastOnce = false;
             do {
                 autoFixedAny = false;
-                var localPaths = consideredLocalExtensionsToReplace.SelectMany(extension =>
-                    Directory.GetFiles(rootAssetsFolderNew, extension, SearchOption.AllDirectories)
-                )
-                .Distinct()
-                .ToArray();
-
+                var localPaths = Directory.GetFiles(rootAssetsFolderNew, "*", SearchOption.AllDirectories);
                 ReplaceGUIDs(localPaths);
                 if (autoFixedAny) fixedAtLeastOnce = true;
             } while (autoFixedAny);
@@ -96,44 +128,46 @@ namespace MetaFileUpdater
             return null;
         }
 
-        private static void FindReplacementGUIDs(string[] oldMetaFiles, string[] newMetaFiles)
+        private static void FindReplacementGUIDs(Dictionary<string, string> oldMetaFiles, Dictionary<string, string> newMetaFiles)
         {
-            for (int i = 0; i < oldMetaFiles.Length; i++) {
-                string oldGUID = GetGuidFromMetaPath(oldMetaFiles[i]);
-                if (oldGUID == null)
-                    continue;
+            oldMetaFiles.Keys.ToList().ForEach(oldMetaPath =>
+            {
+                string oldGUID = oldMetaFiles[oldMetaPath];
+                if (oldGUID == null) {
+                    oldGUID = GetGuidFromMetaPath(oldMetaPath);
+                    if (oldGUID != null)
+                        allFoundGuids.Add(oldMetaPath, oldGUID);
+                }
+                if (oldGUID == null) {
+                    return;
+                }
 
-                //Try to find a new meta file with the same name
-                string correspondingNewMetaFile = FindMatchingFile(newMetaFiles, Path.GetFileName(oldMetaFiles[i]));
+                //Try to find a new meta file with the same path
+                newMetaFiles.TryGetValue(PathToLocal(oldMetaPath), out string correspondingNewMetaFile);
+
+                if (correspondingNewMetaFile == null) {
+                    //Try to find a new meta file with the same name
+                    newMetaFiles.TryGetValue(Path.GetFileName(oldMetaPath), out correspondingNewMetaFile);
+                }
+
                 if (correspondingNewMetaFile == null) {
                     if (!guidsWithoutLocalReplacement.ContainsKey(oldGUID)) {
-                        guidsWithoutLocalReplacement.Add(oldGUID, oldMetaFiles[i]);
+                        guidsWithoutLocalReplacement.Add(oldGUID, oldMetaPath);
                     }
-                    continue;
+                    return;
                 }
 
                 string newGUID = GetGuidFromMetaPath(correspondingNewMetaFile);
 
                 if (newGUID == null)
-                    continue;
+                    return;
 
                 //Add the guids to the dictionary
                 if (!replacableGuids.ContainsKey(oldGUID) && oldGUID != newGUID)
                     replacableGuids.Add(oldGUID, newGUID);
-            }
+            });
 
-            WriteLine($"Found replacement GUIDs for {replacableGuids.Count} meta files");
-            WriteLine($"Found {guidsWithoutLocalReplacement.Count} meta files without local replacement");
-        }
-
-        private static string FindMatchingFile(string[] filesToSearch, string fileName)
-        {
-            for (int i = 0; i < filesToSearch.Length; i++) {
-                if (Path.GetFileName(filesToSearch[i]) == fileName)
-                    return filesToSearch[i];
-            }
-
-            return null;
+            WriteLine($"Found replacement GUIDs for {replacableGuids.Count}/{replacableGuids.Count + guidsWithoutLocalReplacement.Count} meta files");
         }
 
         private static void ReplaceGUIDs(string[] prefabPaths)
@@ -155,7 +189,7 @@ namespace MetaFileUpdater
                             guidsToReplace.Add(currentGUID);
                         } else if (guidsWithoutLocalReplacement.TryGetValue(currentGUID, out var originalPath)) {
                             if (autoFix) {
-                                var path = originalPath.TrimStart(rootAssetsFolderOriginal);
+                                var path = PathToLocal(originalPath);
                                 Directory.CreateDirectory($"{Path.GetDirectoryName($"{rootAssetsFolderNew}/{path}")}");
                                 try {
                                     File.Copy(originalPath, $"{rootAssetsFolderNew}/{path}");
@@ -190,7 +224,7 @@ namespace MetaFileUpdater
                         string currentGUID = guidsToReplace[j];
                         string newGUID = replacableGuids[guidsToReplace[j]];
                         fileData = fileData.Replace(currentGUID, newGUID);
-                        WriteLine($"Replacing {currentGUID} with {newGUID} in {Path.GetFileName(prefabPaths[i])}");
+                        WriteLine($"Replacing {currentGUID} with {newGUID} in {PathToLocal(prefabPaths[i])}");
                     }
 
                     //Write the modified text back to the prefab file
