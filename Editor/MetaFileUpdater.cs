@@ -142,7 +142,7 @@ namespace MetaFileUpdater
                 var guidsToReplace = new List<string>();
                 // This is much more efficient than reading the whole file to work out if it's a viable yaml file for replacement
                 using (StreamReader reader = new StreamReader(prefabPaths[i])) {
-                    if (!reader.ReadLine().StartsWith("%YAML"))
+                    if (reader?.ReadLine()?.StartsWith("%YAML") != true)
                         continue;
                 }
 
