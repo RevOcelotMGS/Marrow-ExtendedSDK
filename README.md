@@ -3,7 +3,13 @@ This repository allows the extension of the BONELAB Marrow SDK, allowing you to 
 
 # How to Install
 
-Install the official SDK from https://github.com/StressLevelZero/MarrowSDK/wiki#project-setup
+Follow steps 1-5 from the official SDK over at https://github.com/StressLevelZero/MarrowSDK/wiki#project-setup
+In step 6, you'll want to import these 3 via github URL:
+https://github.com/StressLevelZero/Custom-RenderPipelineCore.git
+https://github.com/StressLevelZero/Custom-URP.git#Bonelab
+https://github.com/Kairus101/MarrowSDKExt.git
+
+Then continue as usual.
 
 Note: Other packages added into your Unity Project may cause errors.
 
