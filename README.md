@@ -1,6 +1,8 @@
 # Info
 This repository allows the extension of the BONELAB Marrow SDK, allowing you to create guns and other types of items not yet supported by the Marrow SDK.
 
+One of the major objectives of this repo, is to remove incentives to decompile the game, through strategic inclusion of assets which aren't useful elsewhere, and thorough documentation of what's possible.
+
 # How to Install
 
 Follow steps 1-5 from the official SDK over at https://github.com/StressLevelZero/MarrowSDK/wiki#project-setup
