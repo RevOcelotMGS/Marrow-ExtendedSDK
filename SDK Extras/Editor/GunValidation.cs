@@ -61,6 +61,16 @@ public class GunValidation {
         });
 
         results.Add(new ValidationResult {
+            Testcase = "Gun's Magazine has a matching AmmoSocket Platform",
+            Success = () => {
+                var gun = gameObject.GetComponent<Gun>();
+                var magazine = gun?.defaultMagazine ?? gun?.internalMagazine;
+                if (magazine == null) return true;
+                return gameObject.GetComponentsInChildren<AmmoSocket>().Any(a => a.platform == magazine.platform);
+            }
+        });
+
+        results.Add(new ValidationResult {
             Testcase = "Gun has magazine data",
             Success = () => gameObject.GetComponent<Gun>()?.defaultMagazine ?? gameObject.GetComponent<Gun>()?.internalMagazine != null
         });

@@ -45,19 +45,18 @@ public class SharedValidation {
         });
 
         results.Add(new ValidationResult {
-            Testcase = "Grips have hand poses",
+            Testcase = "Plugs have InteractableHost set",
             Success = () => {
-                var grips = gameObject.GetComponentsInChildren<Grip>();
-                return grips.All(g => g.handPose != null);
+                var plugs = gameObject.GetComponentsInChildren<Plug>();
+                return plugs.All(p => p.host != null);
             }
         });
 
         results.Add(new ValidationResult {
-            Testcase = "Grips are all on the Interactable layer",
+            Testcase = "Grips have hand poses",
             Success = () => {
-                var parents = gameObject.GetComponentsInChildren<Grip>().Select(s => s.gameObject).Distinct();
-                var layer = LayerMask.NameToLayer("Interactable");
-                return parents.All(go => go.layer == layer);
+                var grips = gameObject.GetComponentsInChildren<Grip>();
+                return grips.All(g => g.handPose != null);
             }
         });
 
@@ -73,7 +72,16 @@ public class SharedValidation {
         // Recommended
 
         results.Add(new ValidationResult {
-            Testcase = "Recommended: Root shouldn't have RigidBody, Art, Colliders etc",
+            Testcase = "Recommended: Grips are all on the Interactable layer",
+            Success = () => {
+                var parents = gameObject.GetComponentsInChildren<Grip>().Select(s => s.gameObject).Distinct();
+                var layer = LayerMask.NameToLayer("Interactable");
+                return parents.All(go => go.layer == layer);
+            }
+        });
+
+        results.Add(new ValidationResult {
+            Testcase = "Best Practice: Root shouldn't have RigidBody, Art, Colliders etc",
             Success = () => {
                 if (gameObject.GetComponent<MeshRenderer>()) return false;
                 if (gameObject.GetComponent<Collider>()) return false;
