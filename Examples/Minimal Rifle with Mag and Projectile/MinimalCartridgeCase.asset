@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34569ddb84e20304981812b1c448d930, type: 3}
+  m_Name: MinimalCartridgeCase
+  m_EditorClassIdentifier: 
+  _barcode:
+    _id: null.empty.barcode
+    generated: 1
+  _barcodeOld:
+    _id: null.empty.barcode
+    generated: 0
+  _slimCode:
+    _byteArray: 
+  _title: MinimalCartridgeCase
+  _description: 
+  _unlockable: 0
+  _redacted: 0
+  _pallet: {fileID: 11400000, guid: 0f402b4addc7bfc4dbaa7c84ea16eb99, type: 2}
+  _tags: []
+  _mainAsset:
+    _assetGUID: e0acd817ee4c74c4d89530beb66c52ab
+    _editorAssetChanged: 0
+  _previewMesh:
+    _assetGUID: b532a79d7910e144fba363b5a1024c02
+    _editorAssetChanged: 1
+  _customQuality: 0
+  _previewMeshQuality: 0.5
+  _maxLODLevel: 0
+  _colliderBounds:
+    m_Center: {x: 0, y: 0, z: 0.003462146}
+    m_Extent: {x: 0.006020002, y: 0.006020001, z: 0.015462151}
