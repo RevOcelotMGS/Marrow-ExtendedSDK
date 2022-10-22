@@ -1300,7 +1300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   slotType: 2
-  interactableHost: {fileID: 0}
+  interactableHost: {fileID: 4517610621839886950}
   magazineSocket: {fileID: 114731688526933976}
   gun: {fileID: 114583987844847152}
   grip: {fileID: 114120070746054664}
