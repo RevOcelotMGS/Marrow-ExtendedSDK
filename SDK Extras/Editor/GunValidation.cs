@@ -91,6 +91,20 @@ public class GunValidation {
             Success = () => gameObject.GetComponent<HandgunVirtualController>()?.shoulderTransform != null
         });
 
+        results.Add(new ValidationResult
+        {
+            Testcase = "Recommended: if Virtual slide controller used same Grips references in Primary and Ignore Grips",
+            Success = () => {
+                var primaryGrips = gameObject.GetComponent<SlideVirtualController>().primaryGrips;
+                var ignoreGrips = gameObject.GetComponent<SlideVirtualController>().ignoreGrips;
+                for (var i = 0; i < primaryGrips.Length; i++)
+                {
+                    if (primaryGrips[0] != ignoreGrips[0]) return false;
+                }
+                return true;
+            }
+        });
+
         results.AddRange(SharedValidation.SharedValidationRules());
 
         ValidationResult.DisplayResults(results);
