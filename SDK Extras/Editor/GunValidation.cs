@@ -78,7 +78,17 @@ public class GunValidation {
         results.Add(new ValidationResult
         {
             Testcase = "If you are not doing an infinite ammo type of gun Internal Magazine should be set as none to prevent reloading issue",
-            Success = () => gameObject.GetComponent<Gun>()?.internalMagazine == null
+            Success = () => {
+                var internalMag = gameObject.GetComponent<Gun>()?.internalMagazine;
+                var defaultMagRound = gameObject.GetComponent<Gun>()?.defaultMagazine.rounds;
+                return internalMag == null && defaultMagRound != 999999;
+            }
+        });
+
+        results.Add(new ValidationResult
+        {
+            Testcase = "Shoulder Transform shouldn't be null",
+            Success = () => gameObject.GetComponent<HandgunVirtualController>()?.shoulderTransform != null
         });
 
         results.AddRange(SharedValidation.SharedValidationRules());
