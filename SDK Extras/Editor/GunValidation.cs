@@ -75,6 +75,12 @@ public class GunValidation {
             Success = () => gameObject.GetComponent<Gun>()?.defaultMagazine ?? gameObject.GetComponent<Gun>()?.internalMagazine != null
         });
 
+        results.Add(new ValidationResult
+        {
+            Testcase = "If you are not doing an infinite ammo type of gun Internal Magazine should be set as none to prevent reloading issue",
+            Success = () => gameObject.GetComponent<Gun>()?.internalMagazine == null
+        });
+
         results.AddRange(SharedValidation.SharedValidationRules());
 
         ValidationResult.DisplayResults(results);
