@@ -112,18 +112,14 @@ public class GunValidation {
                     return true;
                 }
             });
-
-            results.Add(new ValidationResult
+			
+			results.Add(new ValidationResult
             {
                 Testcase = "Recommended: if Virtual slide controller used then Grips references in Primary and Ignore Grips should be the same",
                 Success = () => {
                     var primaryGrips = gameObject.GetComponent<SlideVirtualController>().primaryGrips;
                     var ignoreGrips = gameObject.GetComponent<SlideVirtualController>().ignoreGrips;
-                    for (var i = 0; i < primaryGrips.Length; i++)
-                    {
-                        if (primaryGrips[0] != ignoreGrips[0]) return false;
-                    }
-                    return true;
+                    return primaryGrips.Count() == ignoreGrips.Count() && primaryGrips.All(g => ignoreGrips.Any(g2 => g == g2));
                 }
             });
         }
