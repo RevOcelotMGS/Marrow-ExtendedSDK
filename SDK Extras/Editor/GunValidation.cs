@@ -85,11 +85,48 @@ public class GunValidation {
             }
         });
 
-        results.Add(new ValidationResult
+        if (gameObject.GetComponent<HandgunVirtualController>() != null)
         {
-            Testcase = "Shoulder Transform shouldn't be null",
-            Success = () => gameObject.GetComponent<HandgunVirtualController>()?.shoulderTransform != null
-        });
+            results.Add(new ValidationResult
+            {
+                Testcase = "Shoulder Transform shouldn't be null",
+                Success = () => gameObject.GetComponent<HandgunVirtualController>()?.shoulderTransform != null
+            });
+        }
+
+
+        if ( gameObject.GetComponent<SlideVirtualController>() != null)
+        {
+            results.Add(new ValidationResult
+            {
+                Testcase = "Track Transform should be set outside of the Slide Mover game object",
+                Success = () =>
+                {
+                    var trackTransform = gameObject.GetComponent<SlideVirtualController>().trackTransform;
+                    var slideMoverGo = gameObject.GetComponentInChildren<SlideMover>()?.gameObject;
+                    if (slideMoverGo && trackTransform == slideMoverGo.transform) return false;
+                    foreach (var child in slideMoverGo.GetComponentsInChildren<Transform>())
+                    {
+                        if (trackTransform == child) return false;
+                    }
+                    return true;
+                }
+            });
+
+            results.Add(new ValidationResult
+            {
+                Testcase = "Recommended: if Virtual slide controller used then Grips references in Primary and Ignore Grips should be the same",
+                Success = () => {
+                    var primaryGrips = gameObject.GetComponent<SlideVirtualController>().primaryGrips;
+                    var ignoreGrips = gameObject.GetComponent<SlideVirtualController>().ignoreGrips;
+                    for (var i = 0; i < primaryGrips.Length; i++)
+                    {
+                        if (primaryGrips[0] != ignoreGrips[0]) return false;
+                    }
+                    return true;
+                }
+            });
+        }
 
         results.AddRange(SharedValidation.SharedValidationRules());
 
