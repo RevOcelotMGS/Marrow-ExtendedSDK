@@ -211,14 +211,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5232194181515784511}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0.7071068, z: -0.7071068, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6559812063115597524}
   m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 90, y: 180, z: 0}
 --- !u!114 &4181880065450397556
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -370,7 +370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6559812061397153935}
   m_LocalRotation: {x: -0.7071065, y: 0.00000074505795, z: 0.0000009728598, w: 0.7071071}
-  m_LocalPosition: {x: -0.0002, y: -0.0492, z: -0.0431}
+  m_LocalPosition: {x: 0, y: -0.0468, z: -0.0313}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2423,7 +2423,7 @@ MonoBehaviour:
   allowSingleHandOverride: 1
   useTheseSettings: 1
   virtualControllerSettings:
-    lookRotationWeight: 1
+    lookRotationWeight: 0
     handTwistWeight: 0.15
     handSwingWeight: 0
     positionWeight: 0.15
