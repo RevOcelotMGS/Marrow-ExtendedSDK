@@ -89,6 +89,12 @@ public class GunValidation {
         {
             results.Add(new ValidationResult
             {
+                Testcase = "Look rotation weight is set at 0",
+                Success = () => gameObject.GetComponent<HandgunVirtualController>().virtualControllerSettings.lookRotationWeight == 0
+            });
+
+            results.Add(new ValidationResult
+            {
                 Testcase = "Shoulder Transform shouldn't be null",
                 Success = () => gameObject.GetComponent<HandgunVirtualController>()?.shoulderTransform != null
             });
