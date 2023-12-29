@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using SLZ.Marrow.Data;
 using UnityEngine;
 
-namespace SLZ
+namespace SLZ.Utilities
 {
 	public class ExtendedPrefabSpawner : MonoBehaviour
 	{
