@@ -6,7 +6,7 @@ using System.Runtime.CompilerServices;
 using SLZ.Marrow.Data;
 using UnityEngine;
 
-namespace SLZ
+namespace SLZ.Utilities
 {
 	public class ExtendedPrefabSpawner : MonoBehaviour
 	{
@@ -39,6 +39,12 @@ namespace SLZ
 		public Vector3 spawnTorqueHigh;
 
 		public float frequencey;
+  
+  		public bool useCoolDown;
+
+		public bool useRestCoolDown;
+
+		public UnityEvent spawnEvent;
 
 		private Rigidbody rb;
 

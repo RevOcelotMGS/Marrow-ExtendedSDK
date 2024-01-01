@@ -3,7 +3,7 @@ using SLZ.Marrow.Utilities;
 using SLZ.SFX;
 using UnityEngine;
 
-namespace SLZ
+namespace SLZ.Props
 {
 	public class SpawnFragment : MonoBehaviour
 	{
