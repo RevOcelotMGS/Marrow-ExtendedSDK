@@ -39,6 +39,12 @@ namespace SLZ.Utilities
 		public Vector3 spawnTorqueHigh;
 
 		public float frequencey;
+  
+  		public bool useCoolDown;
+
+		public bool useRestCoolDown;
+
+		public UnityEvent spawnEvent;
 
 		private Rigidbody rb;
 
